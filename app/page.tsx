@@ -5,6 +5,7 @@ import HomepagePopup from "@/app/components/HomepagePopup";
 import VideoPlayer from "@/app/components/VideoPlayer";
 import HomepageFAQ from "@/app/components/HomepageFAQ";
 import CountUp from "@/app/components/CountUp";
+import VisionMission from "@/app/components/VisionMission";
 
 export default function Home() {
   return (
@@ -24,11 +25,11 @@ export default function Home() {
             Learning to drive? Need Driving Lessons? Tired of wasting endless money on Uber? Need to fill your learner log book hours up fast?
             Let’s start your engines and get your independence. Uno Driving School offers holistic affordable driving lessons and is the go-to driving school near you.
           </p>
-          <div className="flex flex-wrap gap-4 pt-4">
-            <Link href="/prices" className="bg-primary text-white font-anton uppercase text-xl px-8 py-3 rounded-full hover:bg-green-500 transition-transform hover:scale-105 shadow-xl">
+          <div className="flex flex-row gap-4 pt-4">
+            <Link href="/prices" className="bg-primary text-white font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-green-500 transition-transform hover:scale-105 shadow-xl">
               Book a Lesson
             </Link>
-            <Link href="tel:0456860714" className="border-2 border-text-main text-text-main font-anton uppercase text-xl px-8 py-3 rounded-full hover:bg-text-main hover:text-white transition-colors">
+            <Link href="tel:0456860714" className="border-2 border-text-main text-text-main font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-text-main hover:text-white transition-colors">
               Contact Us
             </Link>
           </div>
@@ -124,20 +125,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="space-y-4 mt-6">
-            <div className="bg-background-alt p-6 rounded-xl border-l-4 border-primary">
-              <h3 className="font-anton text-xl text-primary mb-2 uppercase">Our Vision</h3>
-              <p className="italic text-gray-700 font-roboto-slab">
-                Uno driving school's vision is to empower individuals with the skills and mindset to become responsible, confident, and lifelong safe drivers.
-              </p>
-            </div>
-            <div className="bg-background-alt p-6 rounded-xl border-l-4 border-text-main">
-              <h3 className="font-anton text-xl text-text-main mb-2 uppercase">Our Mission</h3>
-              <p className="italic text-gray-700 font-roboto-slab">
-                Uno Driving School's mission: Empower responsible, confident, lifelong safe drivers through experienced instructors, comprehensive training, and a commitment to road safety.
-              </p>
-            </div>
-          </div>
+          <VisionMission />
 
           <div className="pt-2">
             <Link href="/about-us" className="bg-text-main text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-gray-800 transition-colors inline-block">
@@ -183,7 +171,12 @@ export default function Home() {
       {/* Packages Preview */}
       <section className="bg-background-alt py-16">
         <div className="container mx-auto px-6">
-          <h2 className="font-anton text-4xl text-center mb-12">Choose Your Driving Lessons</h2>
+          <h2 className="font-anton text-4xl text-center mb-6">Choose Your Driving Lessons</h2>
+          <div className="text-center mb-12">
+            <Link href="/prices" className="underline font-anton uppercase text-lg hover:text-primary">
+              View All Packages &rarr;
+            </Link>
+          </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Spark */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-1 transition-transform flex flex-col">
@@ -235,7 +228,7 @@ export default function Home() {
             {/* Monte Carlo Test Package */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-1 transition-transform flex flex-col">
               <div className="bg-primary p-4 text-center">
-                <h3 className="font-anton text-white text-2xl uppercase">Monte Carlo Test Package</h3>
+                <h3 className="font-anton text-white text-2xl uppercase">Zoom Test Package</h3>
               </div>
               <div className="p-8 text-center flex-grow flex flex-col">
                 <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Dept. of Transport fees not included</p>
@@ -254,11 +247,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="text-center mt-12">
-            <Link href="/prices" className="underline font-anton uppercase text-lg hover:text-primary">
-              View All Packages &rarr;
-            </Link>
-          </div>
+
         </div>
       </section>
 
