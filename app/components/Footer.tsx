@@ -106,8 +106,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                    <p className="mb-2">&copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.</p>
-                    <p>Designed with Next.js & Tailwind CSS</p>
+                    <p>&copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.</p>
                 </div>
             </div>
         </footer>

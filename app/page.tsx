@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -6,8 +9,11 @@ import VideoPlayer from "@/app/components/VideoPlayer";
 import HomepageFAQ from "@/app/components/HomepageFAQ";
 import CountUp from "@/app/components/CountUp";
 import VisionMission from "@/app/components/VisionMission";
+import VideoModal from "@/app/components/VideoModal";
 
 export default function Home() {
+  const [isHeroVideoOpen, setIsHeroVideoOpen] = useState(false);
+
   return (
     <main className="min-h-screen">
       <HomepagePopup />
@@ -37,6 +43,17 @@ export default function Home() {
 
         {/* Right side visual */}
         <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center">
+          {/* Play Button Overlay */}
+          <button
+            onClick={() => setIsHeroVideoOpen(true)}
+            className="absolute z-20 w-20 h-20 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all group animate-pulse hover:animate-none cursor-pointer"
+            aria-label="Play Video"
+          >
+            <svg className="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
+
           <Image
             src="/learn-to-drive.png"
             alt="Learn to Drive with UNO"
@@ -269,6 +286,12 @@ export default function Home() {
 
       {/* FAQ Section */}
       <HomepageFAQ />
+
+      <VideoModal
+        videoId="Gmargl4hwNg"
+        isOpen={isHeroVideoOpen}
+        onClose={() => setIsHeroVideoOpen(false)}
+      />
     </main>
   );
 }
