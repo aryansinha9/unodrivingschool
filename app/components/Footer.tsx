@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ShapeBlur from "./ShapeBlur";
 
 export default function Footer() {
     return (
@@ -105,8 +106,17 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm pb-8">
                     <p>&copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.</p>
+                </div>
+
+                {/* ShapeBlur Animation */}
+                <div className="w-full h-32 relative opacity-30 mt-4 overflow-hidden rounded-lg">
+                    <ShapeBlur
+                        shapeSize={1.2}
+                        color="#FFFFFF"
+                        opacity={0.3}
+                    />
                 </div>
             </div>
         </footer>
