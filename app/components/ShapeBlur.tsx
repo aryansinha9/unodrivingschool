@@ -242,7 +242,7 @@ const ShapeBlur = ({
 
             ['x', 'y'].forEach(k => {
                 // @ts-ignore
-                vMouseDamp[k] = THREE.MathUtils.damp(vMouseDamp[k], vMouse[k], 8, dt);
+                vMouseDamp[k] = THREE.MathUtils.damp(vMouseDamp[k], vMouse[k], 2, dt);
             });
 
             renderer.render(scene, camera);

@@ -111,7 +111,7 @@ export default function Footer() {
                 </div>
 
                 {/* ShapeBlur Animation */}
-                <div className="w-full h-32 relative opacity-30 mt-4 overflow-hidden rounded-lg">
+                <div className="w-full h-24 relative opacity-30 mt-2 overflow-hidden rounded-lg">
                     <ShapeBlur
                         shapeSize={1.2}
                     />
