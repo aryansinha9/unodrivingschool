@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* Learning Path */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-main py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-12">Simple Steps to Get Your License</h2>
           <div className="grid md:grid-cols-3 gap-8">

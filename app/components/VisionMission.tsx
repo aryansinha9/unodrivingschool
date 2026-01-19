@@ -19,7 +19,7 @@ function AccordionItem({
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={`bg-background-alt p-6 rounded-xl border-l-4 ${borderColorClass}`}>
+        <div className={`bg-background-main p-6 rounded-xl border-l-4 ${borderColorClass}`}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full flex items-center justify-between group focus:outline-none"
