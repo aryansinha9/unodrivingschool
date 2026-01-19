@@ -73,18 +73,23 @@ export default function Navbar() {
                 </nav>
 
                 {/* Mobile Hamburger Button */}
-                <label className="hamburger md:hidden z-[101] relative">
-                    <input
-                        type="checkbox"
-                        checked={isMobileMenuOpen}
-                        onChange={toggleMobileMenu}
-                        aria-label="Toggle Menu"
-                    />
-                    <svg viewBox="0 0 32 32">
-                        <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                        <path className="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
+                <button
+                    className="md:hidden z-[101] relative p-2 text-text-main focus:outline-none"
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle Menu"
+                >
+                    {isMobileMenuOpen ? (
+                        /* Close Icon (X) */
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    ) : (
+                        /* Hamburger Icon (3 lines) */
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    )}
+                </button>
             </div>
 
             {/* Optional Dim Overlay */}
