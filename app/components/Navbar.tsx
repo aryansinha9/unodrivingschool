@@ -13,8 +13,12 @@ export default function Navbar() {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Show navbar if scrolling up or at the very top
-            // Hide navbar if scrolling down and past a threshold (e.g., 100px)
+            // FIX: If the mobile menu is open, we do NOT want the navbar to hide
+            if (isMobileMenuOpen) {
+                setIsVisible(true);
+                return;
+            }
+
             if (currentScrollY < lastScrollY.current || currentScrollY < 50) {
                 setIsVisible(true);
             } else if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
@@ -25,14 +29,8 @@ export default function Navbar() {
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    // Close mobile menu when route changes (optional, but good UX if using Next.js Link properly)
-    // For now, simpler to just add onClick to Links.
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [isMobileMenuOpen]); // Added dependency here
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -40,11 +38,11 @@ export default function Navbar() {
 
     return (
         <header
-            className={`sticky top-0 z-50 bg-background-main shadow-sm px-6 py-4 transition-transform duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"
+            className={`sticky top-0 z-50 bg-background-main shadow-sm px-6 py-4 transition-transform duration-300 ease-in-out ${isVisible || isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
             <div className="flex items-center justify-between">
-                <Link href="/" className="ml-0 md:ml-8 z-50">
+                <Link href="/" className="ml-0 md:ml-8 z-[101]">
                     <div className="relative h-16 w-40 md:h-24 md:w-72">
                         <Image
                             src="/UNO-logo-header-v2.png"
@@ -66,7 +64,6 @@ export default function Navbar() {
                     <Link href="/faqs" className="hover:text-primary transition-colors">FAQs</Link>
                     <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
                     <Link href="/contact-us" className="hover:text-primary transition-colors">Contact</Link>
-
                     <Link href="/prices" className="bg-primary text-white font-anton uppercase px-6 py-2 rounded-full hover:bg-green-500 transition-colors shadow-lg ml-4">
                         Book Now
                     </Link>
@@ -79,12 +76,10 @@ export default function Navbar() {
                     aria-label="Toggle Menu"
                 >
                     {isMobileMenuOpen ? (
-                        /* Close Icon (X) */
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     ) : (
-                        /* Hamburger Icon (3 lines) */
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -92,36 +87,38 @@ export default function Navbar() {
                 </button>
             </div>
 
-            {/* Optional Dim Overlay */}
+            {/* Dim Overlay */}
             {isMobileMenuOpen && (
                 <div
-                    className="fixed inset-0 bg-black opacity-30 z-[99] md:hidden"
+                    className="fixed inset-0 bg-black/50 z-[99] md:hidden"
                     onClick={toggleMobileMenu}
                 ></div>
             )}
 
             {/* Mobile Navigation Drawer */}
             <div
-                className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-[#FFFAF5] z-[100] transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 shadow-lg ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-screen w-4/5 max-w-xs bg-background-main z-[100] transform transition-transform duration-300 ease-in-out md:hidden flex flex-col shadow-2xl ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide">
-                    <Link href="/" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Home</Link>
-                    <Link href="/about-us" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">About Us</Link>
-                    <Link href="/prices" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Prices</Link>
-                    <Link href="/locations" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Locations</Link>
-                    <Link href="/photo-gallery" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Gallery</Link>
-                    <Link href="/faqs" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">FAQs</Link>
-                    <Link href="/blog" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Blog</Link>
-                    <Link href="/contact-us" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Contact</Link>
+                {/* Scrollable Container for Links */}
+                <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide pt-32 pb-10 overflow-y-auto">
+                    <Link href="/" onClick={toggleMobileMenu} className="hover:text-primary">Home</Link>
+                    <Link href="/about-us" onClick={toggleMobileMenu} className="hover:text-primary">About Us</Link>
+                    <Link href="/prices" onClick={toggleMobileMenu} className="hover:text-primary">Prices</Link>
+                    <Link href="/locations" onClick={toggleMobileMenu} className="hover:text-primary">Locations</Link>
+                    <Link href="/photo-gallery" onClick={toggleMobileMenu} className="hover:text-primary">Gallery</Link>
+                    <Link href="/faqs" onClick={toggleMobileMenu} className="hover:text-primary">FAQs</Link>
+                    <Link href="/blog" onClick={toggleMobileMenu} className="hover:text-primary">Blog</Link>
+                    <Link href="/contact-us" onClick={toggleMobileMenu} className="hover:text-primary">Contact</Link>
+
+                    <Link
+                        href="/prices"
+                        onClick={toggleMobileMenu}
+                        className="bg-primary text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-green-500 shadow-lg text-xl mt-4"
+                    >
+                        Book Now
+                    </Link>
                 </nav>
-                <Link
-                    href="/prices"
-                    onClick={toggleMobileMenu}
-                    className="bg-primary text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-green-500 transition-colors shadow-lg text-xl"
-                >
-                    Book Now
-                </Link>
             </div>
         </header>
     );
