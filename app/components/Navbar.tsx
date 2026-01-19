@@ -73,26 +73,30 @@ export default function Navbar() {
                 </nav>
 
                 {/* Mobile Hamburger Button */}
-                <button
-                    className="md:hidden z-50 p-2 text-text-main focus:outline-none"
-                    onClick={toggleMobileMenu}
-                    aria-label="Toggle Menu"
-                >
-                    {isMobileMenuOpen ? (
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    ) : (
-                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    )}
-                </button>
+                <label className="hamburger md:hidden z-50">
+                    <input
+                        type="checkbox"
+                        checked={isMobileMenuOpen}
+                        onChange={toggleMobileMenu}
+                        aria-label="Toggle Menu"
+                    />
+                    <svg viewBox="0 0 32 32">
+                        <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path className="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
             </div>
 
-            {/* Mobile Navigation Menu Overlay */}
+            {/* Mobile Navigation Drawer Overlay */}
             <div
-                className={`fixed inset-0 bg-background-main z-40 flex flex-col items-center justify-center space-y-8 transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+            />
+
+            {/* Mobile Navigation Drawer */}
+            <div
+                className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-background-main z-40 shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide">
