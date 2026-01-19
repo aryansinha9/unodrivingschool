@@ -98,62 +98,64 @@ export default function Home() {
       </section>
 
       {/* Philosophy / About Section */}
-      <section className="container mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Column - Image with Counter */}
-        <div className="order-2 lg:order-1 relative">
-          <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/homepage_experience.jpg"
-              alt="Happy student passing driving test"
-              fill
-              className="object-cover"
-            />
+      <section className="bg-background-alt py-16 lg:py-24">
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Image with Counter */}
+          <div className="order-2 lg:order-1 relative">
+            <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/homepage_experience.jpg"
+                alt="Happy student passing driving test"
+                fill
+                className="object-cover"
+              />
 
-            {/* Experience Counter Overlay */}
-            <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-6 rounded-xl border-l-4 border-primary shadow-lg max-w-[200px]">
-              <div className="flex items-baseline gap-1">
-                <CountUp
-                  to={20}
-                  duration={2.5}
-                  className="text-4xl font-anton text-primary"
-                />
-                <span className="text-4xl font-anton text-primary">+</span>
+              {/* Experience Counter Overlay */}
+              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-6 rounded-xl border-l-4 border-primary shadow-lg max-w-[200px]">
+                <div className="flex items-baseline gap-1">
+                  <CountUp
+                    to={20}
+                    duration={2.5}
+                    className="text-4xl font-anton text-primary"
+                  />
+                  <span className="text-4xl font-anton text-primary">+</span>
+                </div>
+                <p className="font-anton text-gray-800 uppercase leading-tight mt-1">
+                  Total Years of Experience
+                </p>
               </div>
-              <p className="font-anton text-gray-800 uppercase leading-tight mt-1">
-                Total Years of Experience
+            </div>
+
+            {/* Decorative elements */}
+            <div className="absolute -z-10 top-[-20px] left-[-20px] w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+            <div className="absolute -z-10 bottom-[-20px] right-[-20px] w-40 h-40 bg-primary/20 rounded-full blur-2xl"></div>
+          </div>
+          <div className="order-1 lg:order-2 space-y-6">
+            <h2 className="font-anton text-4xl lg:text-5xl uppercase text-text-main">
+              Pass Your Drivers Test <span className="text-primary">With UNO!</span>
+            </h2>
+            <div className="space-y-6 font-roboto text-gray-600 leading-relaxed">
+              <p>
+                Looking for affordable driving school nearby with comprehensive and holistic teaching methods? Learn to drive confidently with UNO, the go-to driving school in Brisbane and the Gold Coast. Our expert instructors specialise in helping learners of all ages pass their driving test and drive safely.
+              </p>
+              <p>
+                Specialising in supporting nervous drivers. Whether you struggle with road anxiety or are a nervous driver, our low-stress, holistic teaching approach will help you gain confidence. Experience a positive learning environment at UNO as you embark on a comprehensive journey towards mastering safe driving. Say goodbye to parental admonitions and start your driving lessons today and accelerate towards your independence with just a twist of the gear stick!
               </p>
             </div>
-          </div>
 
-          {/* Decorative elements */}
-          <div className="absolute -z-10 top-[-20px] left-[-20px] w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
-          <div className="absolute -z-10 bottom-[-20px] right-[-20px] w-40 h-40 bg-primary/20 rounded-full blur-2xl"></div>
-        </div>
-        <div className="order-1 lg:order-2 space-y-6">
-          <h2 className="font-anton text-4xl lg:text-5xl uppercase text-text-main">
-            Pass Your Drivers Test <span className="text-primary">With UNO!</span>
-          </h2>
-          <div className="space-y-6 font-roboto text-gray-600 leading-relaxed">
-            <p>
-              Looking for affordable driving school nearby with comprehensive and holistic teaching methods? Learn to drive confidently with UNO, the go-to driving school in Brisbane and the Gold Coast. Our expert instructors specialise in helping learners of all ages pass their driving test and drive safely.
-            </p>
-            <p>
-              Specialising in supporting nervous drivers. Whether you struggle with road anxiety or are a nervous driver, our low-stress, holistic teaching approach will help you gain confidence. Experience a positive learning environment at UNO as you embark on a comprehensive journey towards mastering safe driving. Say goodbye to parental admonitions and start your driving lessons today and accelerate towards your independence with just a twist of the gear stick!
-            </p>
-          </div>
+            <VisionMission />
 
-          <VisionMission />
-
-          <div className="pt-2">
-            <Link href="/about-us" className="bg-text-main text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-gray-800 transition-colors inline-block">
-              About Us
-            </Link>
+            <div className="pt-2">
+              <Link href="/about-us" className="bg-text-main text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-gray-800 transition-colors inline-block">
+                About Us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Learning Path */}
-      <section className="bg-background-main py-16">
+      <section className="bg-background-alt py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-12">Simple Steps to Get Your License</h2>
           <div className="grid md:grid-cols-3 gap-8">
