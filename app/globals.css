@@ -16,22 +16,4 @@ body {
   background-color: var(--color-background-main);
   color: var(--color-text-main);
   font-family: var(--font-roboto), sans-serif;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/background-pattern.png');
-  background-repeat: repeat;
-  background-size: 500px;
-  /* Adjust size as needed */
-  opacity: 0.05;
-  /* Subtle opacity */
-  z-index: -1;
-  pointer-events: none;
 }
