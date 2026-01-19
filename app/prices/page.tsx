@@ -185,7 +185,7 @@ export default function Prices() {
                         ]}
                     />
                     <PricingCard
-                        title="Gran Truism Package"
+                        title="Zoom Test Package"
                         subtitle="Driving Test Package including one hour pre drive"
                         price="$200.00"
                         features={[
