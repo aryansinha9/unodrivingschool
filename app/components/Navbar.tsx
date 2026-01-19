@@ -90,9 +90,16 @@ export default function Navbar() {
             </div>
 
 
+            {/* Mobile Navigation Drawer Overlay */}
+            <div
+                className={`fixed inset-0 bg-black/50 z-[99] transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+            />
+
             {/* Mobile Navigation Drawer */}
             <div
-                className={`fixed inset-0 w-full h-full bg-[#FFFAF5] z-[100] transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-[#FFFAF5] z-[100] shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide">
