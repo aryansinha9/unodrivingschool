@@ -126,8 +126,8 @@ void main() {
     // COLOR CHANGE: White (1.0)
     vec3 color = vec3(1.0);
     
-    // TRANSLUCENCY CHANGE: Multiply alpha by 0.5 for 50% opacity
-    float alpha = sdf * 0.5;
+    // TRANSLUCENCY CHANGE: Multiply alpha by 0.3 for 30% opacity
+    float alpha = sdf * 0.3;
     
     gl_FragColor = vec4(color.rgb, alpha);
 }
@@ -150,7 +150,7 @@ const ShapeBlur = ({
     pixelRatioProp = 2,
     shapeSize = 1.6,
     roundness = 0.5,
-    borderSize = 0.15,
+    borderSize = 0.1,
     circleSize = 0.4,
     circleEdge = 1.0
 }: ShapeBlurProps) => {
@@ -242,7 +242,7 @@ const ShapeBlur = ({
 
             ['x', 'y'].forEach(k => {
                 // @ts-ignore
-                vMouseDamp[k] = THREE.MathUtils.damp(vMouseDamp[k], vMouse[k], 2, dt);
+                vMouseDamp[k] = THREE.MathUtils.damp(vMouseDamp[k], vMouse[k], 8, dt);
             });
 
             renderer.render(scene, camera);
