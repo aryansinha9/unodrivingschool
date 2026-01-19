@@ -114,8 +114,6 @@ export default function Footer() {
                 <div className="w-full h-32 relative opacity-30 mt-4 overflow-hidden rounded-lg">
                     <ShapeBlur
                         shapeSize={1.2}
-                        color="#FFFFFF"
-                        opacity={0.3}
                     />
                 </div>
             </div>
