@@ -121,7 +121,7 @@ void main() {
     
     sdf = sdInfinity(vec2(p.x * 1.1, p.y), size);
     
-    sdf = strokeAA(sdf, 0.0, borderSize, sdfCircle * 0.2) * 4.0;
+    sdf = strokeAA(sdf, 0.0, borderSize, sdfCircle * 0.1) * 4.0;
 
     // COLOR CHANGE: White (1.0)
     vec3 color = vec3(1.0);
