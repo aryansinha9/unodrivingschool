@@ -96,7 +96,7 @@ export default function Navbar() {
 
             {/* Mobile Navigation Drawer */}
             <div
-                className={`fixed top-0 right-0 h-full w-[80%] max-w-sm bg-[#FFFAF5] z-[60] shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-full w-full bg-[#FFFAF5] z-[60] shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide">
