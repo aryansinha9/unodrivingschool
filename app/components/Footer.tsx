@@ -4,7 +4,7 @@ import ShapeBlur from "./ShapeBlur";
 
 export default function Footer() {
     return (
-        <footer className="bg-footer text-white py-16">
+        <footer className="bg-footer text-white pt-16">
             <div className="container mx-auto px-6">
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Contact */}
@@ -106,16 +106,29 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm pb-8">
-                    <p>&copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.</p>
-                </div>
+                {/* BOTTOM SECTION */}
+                {/* 1. We keep the border-t separate to draw the line */}
+                <div className="border-t border-gray-800 pt-8">
 
-                {/* ShapeBlur Animation */}
-                <div className="w-full h-24 relative opacity-30 mt-2 overflow-hidden rounded-lg">
-                    <ShapeBlur
-                        shapeSize={1.4}
-                        borderSize={0.12}
-                    />
+                    {/* 2. We use a Flex Column to handle the spacing precisely */}
+                    {/* gap-10 puts space between Copyright and Component */}
+                    {/* pb-10 puts space between Component and Bottom */}
+                    <div className="flex flex-col items-center gap-10 pb-10">
+
+                        {/* Copyright */}
+                        <p className="text-gray-500 text-sm text-center">
+                            &copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.
+                        </p>
+
+                        {/* ShapeBlur Animation */}
+                        <div className="w-full h-24 relative opacity-30 overflow-hidden rounded-lg">
+                            <ShapeBlur
+                                shapeSize={1.4}
+                                borderSize={0.12}
+                            />
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </footer>
