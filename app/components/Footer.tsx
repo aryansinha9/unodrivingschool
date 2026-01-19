@@ -122,10 +122,12 @@ export default function Footer() {
 
                         {/* ShapeBlur Animation */}
                         <div className="w-full h-24 relative opacity-30 overflow-hidden rounded-lg">
-                            <ShapeBlur
-                                shapeSize={1.4}
-                                borderSize={0.12}
-                            />
+                            <a href="https://anantasystems.com.au/" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer">
+                                <ShapeBlur
+                                    shapeSize={1.4}
+                                    borderSize={0.12}
+                                />
+                            </a>
                         </div>
 
                     </div>
