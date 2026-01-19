@@ -18,14 +18,25 @@ uniform vec2 u_mouse;
 uniform vec2 u_resolution;
 uniform float u_pixelRatio;
 
-// Shape Settings
 uniform float u_shapeSize;
+uniform float u_roundness;
 uniform float u_borderSize;
 uniform float u_circleSize;
 uniform float u_circleEdge;
-uniform vec3 u_color;
-uniform float u_opacity; // New uniform for translucency
 
+#ifndef PI
+#define PI 3.1415926535897932384626433832795
+#endif
+#ifndef TWO_PI
+#define TWO_PI 6.2831853071795864769252867665590
+#endif
+
+#ifndef VAR
+#define VAR 0
+#endif
+
+#ifndef FNC_COORD
+#define FNC_COORD
 vec2 coord(in vec2 p) {
     p = p / u_resolution.xy;
     if (u_resolution.x > u_resolution.y) {
@@ -39,78 +50,109 @@ vec2 coord(in vec2 p) {
     p *= vec2(-1.0, 1.0);
     return p;
 }
+#endif
 
 #define st0 coord(gl_FragCoord.xy)
 #define mx coord(u_mouse * u_pixelRatio)
+
+// --- SDF HELPERS ---
 
 float sdCircle(in vec2 st, in vec2 center) {
     return length(st - center) * 2.0;
 }
 
-// INFINITY SHAPE MATH
+// Custom SDF for Lemniscate of Bernoulli (Infinity Symbol)
 float sdInfinity(vec2 p, float s) {
-    p *= 2.0; 
-    p.x /= s; 
-    float x2 = p.x * p.x;
-    float y2 = p.y * p.y;
-    float sumSq = x2 + y2;
-    float diffSq = x2 - y2;
-    float val = (sumSq * sumSq) - 2.0 * (diffSq);
-    return val * 0.5; 
+    p /= (s * 0.5); 
+    
+    float x = p.x;
+    float y = p.y;
+    float x2 = x * x;
+    float y2 = y * y;
+    float sum2 = x2 + y2;
+
+    float val = (sum2 * sum2) - 2.0 * (x2 - y2);
+
+    float u = 4.0 * x * (sum2 - 1.0);
+    float v = 4.0 * y * (sum2 + 1.0);
+    
+    float dist = abs(val) / length(vec2(u, v));
+    
+    return dist;
 }
 
-float fill(in float x) { return 1.0 - step(0.0, x); }
+// --- RENDERING HELPERS ---
+
+float aastep(float threshold, float value) {
+    float afwidth = length(vec2(dFdx(value), dFdy(value))) * 0.70710678118654757;
+    return smoothstep(threshold - afwidth, threshold + afwidth, value);
+}
+
+float fill(in float x) { return 1.0 - aastep(0.0, x); }
+
 float fill(float x, float size, float edge) {
     return 1.0 - smoothstep(size - edge, size + edge, x);
 }
 
-float strokeInside(float x, float w, float edge) {
-    float d = smoothstep(w + edge, w, abs(x));
+float strokeAA(float x, float size, float w, float edge) {
+    float afwidth = length(vec2(dFdx(x), dFdy(x))) * 0.70710678;
+    float d = smoothstep(size - edge - afwidth, size + edge + afwidth, x + w * 0.5)
+            - smoothstep(size - edge - afwidth, size + edge + afwidth, x - w * 0.5);
     return clamp(d, 0.0, 1.0);
 }
 
 void main() {
-    vec2 st = st0 + 0.5;
+    vec2 st = st0 + 0.5; 
     vec2 posMouse = mx * vec2(1., -1.) + 0.5;
-    
-    // Mouse Interaction
+    vec2 p = st0 * 2.5; 
+
+    float size = u_shapeSize;
+    float borderSize = u_borderSize;
+    float circleSize = u_circleSize;
+    float circleEdge = u_circleEdge;
+
     float sdfCircle = fill(
         sdCircle(st, posMouse),
-        u_circleSize,
-        u_circleEdge
+        circleSize,
+        circleEdge
     );
 
-    // Shape
-    float sdf = sdInfinity(st - 0.5, u_shapeSize);
+    float sdf;
     
-    // Calculate shape alpha based on blur
-    float shapeAlpha = strokeInside(sdf, u_borderSize, sdfCircle * 0.5);
+    sdf = sdInfinity(vec2(p.x * 1.1, p.y), size);
+    
+    sdf = strokeAA(sdf, 0.0, borderSize, sdfCircle) * 4.0;
 
-    // Combine Color + Shape Alpha + Global Opacity
-    gl_FragColor = vec4(u_color, shapeAlpha * u_opacity);
+    // COLOR CHANGE: White (1.0)
+    vec3 color = vec3(1.0);
+    
+    // TRANSLUCENCY CHANGE: Multiply alpha by 0.5 for 50% opacity
+    float alpha = sdf * 0.5;
+    
+    gl_FragColor = vec4(color.rgb, alpha);
 }
 `;
 
 interface ShapeBlurProps {
     className?: string;
+    variation?: number;
     pixelRatioProp?: number;
     shapeSize?: number;
+    roundness?: number;
     borderSize?: number;
     circleSize?: number;
     circleEdge?: number;
-    color?: string;
-    opacity?: number;
 }
 
 const ShapeBlur = ({
     className = '',
+    variation = 0,
     pixelRatioProp = 2,
-    shapeSize = 1.3,
-    borderSize = 0.12,
+    shapeSize = 1.6,
+    roundness = 0.5,
+    borderSize = 0.15,
     circleSize = 0.4,
-    circleEdge = 1.0,
-    color = '#FFFFFF', // Default: White
-    opacity = 0.5      // Default: 50% Translucent
+    circleEdge = 1.0
 }: ShapeBlurProps) => {
     const mountRef = useRef<HTMLDivElement>(null);
 
@@ -119,21 +161,22 @@ const ShapeBlur = ({
         if (!mount) return;
 
         let animationFrameId: number;
-        let time = 0, lastTime = 0;
+        let time = 0,
+            lastTime = 0;
 
         const vMouse = new THREE.Vector2();
         const vMouseDamp = new THREE.Vector2();
         const vResolution = new THREE.Vector2();
-        const vColor = new THREE.Color(color);
 
-        let w = 1, h = 1;
+        let w = 1,
+            h = 1;
 
         const scene = new THREE.Scene();
         const camera = new THREE.OrthographicCamera();
         camera.position.z = 1;
 
         const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-        renderer.setClearColor(0x000000, 0); // Clear background
+        renderer.setClearColor(0x000000, 0);
         mount.appendChild(renderer.domElement);
 
         const geo = new THREE.PlaneGeometry(1, 1);
@@ -145,14 +188,13 @@ const ShapeBlur = ({
                 u_resolution: { value: vResolution },
                 u_pixelRatio: { value: pixelRatioProp },
                 u_shapeSize: { value: shapeSize },
+                u_roundness: { value: roundness },
                 u_borderSize: { value: borderSize },
                 u_circleSize: { value: circleSize },
-                u_circleEdge: { value: circleEdge },
-                u_color: { value: vColor },
-                u_opacity: { value: opacity }
+                u_circleEdge: { value: circleEdge }
             },
-            transparent: true,
-            depthTest: false // Improves transparency rendering
+            defines: { VAR: variation },
+            transparent: true
         });
 
         const quad = new THREE.Mesh(geo, material);
@@ -167,8 +209,8 @@ const ShapeBlur = ({
         document.addEventListener('pointermove', onPointerMove);
 
         const resize = () => {
-            if (!mountRef.current) return;
             const container = mountRef.current;
+            if (!container) return;
             w = container.clientWidth;
             h = container.clientHeight;
             const dpr = Math.min(window.devicePixelRatio, 2);
@@ -214,14 +256,14 @@ const ShapeBlur = ({
             if (ro) ro.disconnect();
             document.removeEventListener('mousemove', onPointerMove);
             document.removeEventListener('pointermove', onPointerMove);
-            if (mount && mount.contains(renderer.domElement)) {
+            if (mount.contains(renderer.domElement)) {
                 mount.removeChild(renderer.domElement);
             }
             renderer.dispose();
-            material.dispose();
             geo.dispose();
+            material.dispose();
         };
-    }, [pixelRatioProp, shapeSize, borderSize, circleSize, circleEdge, color, opacity]);
+    }, [variation, pixelRatioProp, shapeSize, roundness, borderSize, circleSize, circleEdge]);
 
     return <div className={className} ref={mountRef} style={{ width: '100%', height: '100%' }} />;
 };
