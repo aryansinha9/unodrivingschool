@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const lastScrollY = useRef(0);
 
     useEffect(() => {
@@ -30,35 +31,88 @@ export default function Navbar() {
         };
     }, []);
 
+    // Close mobile menu when route changes (optional, but good UX if using Next.js Link properly)
+    // For now, simpler to just add onClick to Links.
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <header
-            className={`sticky top-0 z-50 bg-background-main shadow-sm px-6 py-4 flex items-center justify-between transition-transform duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"
+            className={`sticky top-0 z-50 bg-background-main shadow-sm px-6 py-4 transition-transform duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
-            <Link href="/" className="ml-8">
-                <div className="relative h-24 w-56 md:w-72">
-                    <Image
-                        src="/UNO-logo-header-v2.png"
-                        alt="UNO Driving School Logo"
-                        fill
-                        className="object-contain object-left"
-                        priority
-                    />
-                </div>
-            </Link>
-            <nav className="hidden md:flex gap-6 font-roboto font-medium text-text-main">
-                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-                <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
-                <Link href="/prices" className="hover:text-primary transition-colors">Prices</Link>
-                <Link href="/locations" className="hover:text-primary transition-colors">Locations</Link>
-                <Link href="/photo-gallery" className="hover:text-primary transition-colors">Gallery</Link>
-                <Link href="/faqs" className="hover:text-primary transition-colors">FAQs</Link>
-                <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-                <Link href="/contact-us" className="hover:text-primary transition-colors">Contact</Link>
-            </nav>
-            <Link href="/prices" className="bg-primary text-white font-anton uppercase px-6 py-2 rounded-full hover:bg-green-500 transition-colors shadow-lg">
-                Book Now
-            </Link>
+            <div className="flex items-center justify-between">
+                <Link href="/" className="ml-0 md:ml-8 z-50">
+                    <div className="relative h-16 w-40 md:h-24 md:w-72">
+                        <Image
+                            src="/UNO-logo-header-v2.png"
+                            alt="UNO Driving School Logo"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
+                    </div>
+                </Link>
+
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex gap-6 font-roboto font-medium text-text-main items-center">
+                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                    <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
+                    <Link href="/prices" className="hover:text-primary transition-colors">Prices</Link>
+                    <Link href="/locations" className="hover:text-primary transition-colors">Locations</Link>
+                    <Link href="/photo-gallery" className="hover:text-primary transition-colors">Gallery</Link>
+                    <Link href="/faqs" className="hover:text-primary transition-colors">FAQs</Link>
+                    <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+                    <Link href="/contact-us" className="hover:text-primary transition-colors">Contact</Link>
+
+                    <Link href="/prices" className="bg-primary text-white font-anton uppercase px-6 py-2 rounded-full hover:bg-green-500 transition-colors shadow-lg ml-4">
+                        Book Now
+                    </Link>
+                </nav>
+
+                {/* Mobile Hamburger Button */}
+                <button
+                    className="md:hidden z-50 p-2 text-text-main focus:outline-none"
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle Menu"
+                >
+                    {isMobileMenuOpen ? (
+                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    ) : (
+                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    )}
+                </button>
+            </div>
+
+            {/* Mobile Navigation Menu Overlay */}
+            <div
+                className={`fixed inset-0 bg-background-main z-40 flex flex-col items-center justify-center space-y-8 transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
+            >
+                <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide">
+                    <Link href="/" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Home</Link>
+                    <Link href="/about-us" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">About Us</Link>
+                    <Link href="/prices" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Prices</Link>
+                    <Link href="/locations" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Locations</Link>
+                    <Link href="/photo-gallery" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Gallery</Link>
+                    <Link href="/faqs" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">FAQs</Link>
+                    <Link href="/blog" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Blog</Link>
+                    <Link href="/contact-us" onClick={toggleMobileMenu} className="hover:text-primary transition-colors">Contact</Link>
+                </nav>
+                <Link
+                    href="/prices"
+                    onClick={toggleMobileMenu}
+                    className="bg-primary text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-green-500 transition-colors shadow-lg text-xl"
+                >
+                    Book Now
+                </Link>
+            </div>
         </header>
     );
 }
