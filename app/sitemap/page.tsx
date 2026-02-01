@@ -21,6 +21,11 @@ export default function Sitemap() {
                             <li><Link href="/faqs" className="hover:text-primary">FAQs</Link></li>
                             <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
                             <li><Link href="/contact-us" className="hover:text-primary">Contact Us</Link></li>
+                            <li><Link href="/code-of-conduct" className="hover:text-primary">Code of Conduct</Link></li>
+                            <li><Link href="/terms-conditions" className="hover:text-primary">Terms and Conditions</Link></li>
+                            <li><Link href="/privacy-policy" className="hover:text-primary">Privacy Policy</Link></li>
+                            <li><Link href="/careers" className="hover:text-primary">Careers</Link></li>
+                            <li><Link href="/sitemap" className="hover:text-primary">Sitemap</Link></li>
                         </ul>
                     </div>
 

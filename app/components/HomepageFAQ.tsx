@@ -37,7 +37,7 @@ export default function HomepageFAQ() {
                 />
                 <FAQItem
                     question="Are your instructors certified?"
-                    answer="Yes, all UNO driving instructors are fully certified, accredited, and hold warm blue cards (working with children checks)."
+                    answer="Yes, all UNO driving instructors are fully certified, accredited, and hold blue cards (working with children checks)."
                 />
                 <FAQItem
                     question="Should I learn manual or automatic?"
