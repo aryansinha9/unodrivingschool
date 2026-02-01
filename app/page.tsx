@@ -21,50 +21,63 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-12 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
-          <h1 className="font-anton text-5xl lg:text-7xl leading-tight uppercase text-text-main">
-            LEARN TO <span className="text-primary">DRIVE</span> <br />
-            <span className="text-primary">TODAY!</span>
-          </h1>
-          <p className="font-roboto-slab text-lg text-gray-600 max-w-xl leading-relaxed">
-            Learning to drive? Need Driving Lessons? Tired of wasting endless money on Uber? Need to fill your learner log book hours up fast?
-            Let’s start your engines and get your independence. Uno Driving School offers holistic affordable driving lessons and is the go-to driving school near you.
-          </p>
-          <div className="flex flex-row gap-4 pt-4">
-            <Link href="/prices" className="bg-primary text-white font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-green-500 transition-transform hover:scale-105 shadow-xl">
-              Book a Lesson
-            </Link>
-            <Link href="tel:0456860714" className="border-2 border-text-main text-text-main font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-text-main hover:text-white transition-colors">
-              Contact Us
-            </Link>
-          </div>
-        </div>
-
-        {/* Right side visual */}
-        <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center">
-          {/* Play Button Overlay */}
-          <button
-            onClick={() => setIsHeroVideoOpen(true)}
-            className="absolute z-20 w-20 h-20 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all group animate-pulse hover:animate-none cursor-pointer"
-            aria-label="Play Video"
-          >
-            <svg className="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </button>
-
+      <section className="relative py-12 lg:py-24 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/learn-to-drive.png"
-            alt="Learn to Drive with UNO"
+            src="/images/hero-cars-pattern.jpg"
+            alt="Driving School Pattern"
             fill
-            className="object-contain"
+            className="object-cover opacity-10"
             priority
           />
-          <div className="absolute bottom-4 lg:bottom-12 left-0 right-0 z-10 text-center pointer-events-none">
-            <div className="bg-white px-8 py-4 rounded-2xl shadow-xl max-w-xs mx-auto transform -rotate-2 inline-block pointer-events-auto border-2 border-primary">
-              <h3 className="font-anton text-2xl mb-1 text-primary">#1 Driving School</h3>
-              <p className="font-roboto text-lg font-bold text-text-main">Brisbane & Gold Coast</p>
+        </div>
+
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div className="space-y-6">
+            <h1 className="font-anton text-5xl lg:text-7xl leading-tight uppercase text-text-main">
+              LEARN TO <span className="text-primary">DRIVE</span> <br />
+              <span className="text-primary">TODAY!</span>
+            </h1>
+            <p className="font-roboto-slab text-lg text-gray-600 max-w-xl leading-relaxed">
+              Learning to drive? Need Driving Lessons? Tired of wasting endless money on Uber? Need to fill your learner log book hours up fast?
+              Let’s start your engines and get your independence. Uno Driving School offers holistic affordable driving lessons and is the go-to driving school near you.
+            </p>
+            <div className="flex flex-row gap-4 pt-4">
+              <Link href="/prices" className="bg-primary text-white font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-green-500 transition-transform hover:scale-105 shadow-xl">
+                Book a Lesson
+              </Link>
+              <Link href="/contact-us" className="border-2 border-text-main text-text-main font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-text-main hover:text-white transition-colors">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+
+          {/* Right side visual */}
+          <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center">
+            {/* Play Button Overlay */}
+            <button
+              onClick={() => setIsHeroVideoOpen(true)}
+              className="absolute z-20 w-20 h-20 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all group animate-pulse hover:animate-none cursor-pointer"
+              aria-label="Play Video"
+            >
+              <svg className="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+
+            <Image
+              src="/learn-to-drive.png"
+              alt="Learn to Drive with UNO"
+              fill
+              className="object-contain"
+              priority
+            />
+            <div className="absolute bottom-4 lg:bottom-12 left-0 right-0 z-10 text-center pointer-events-none">
+              <div className="bg-white px-8 py-4 rounded-2xl shadow-xl max-w-xs mx-auto transform -rotate-2 inline-block pointer-events-auto border-2 border-primary">
+                <h3 className="font-anton text-2xl mb-1 text-primary">#1 Driving School</h3>
+                <p className="font-roboto text-lg font-bold text-text-main">Brisbane & Gold Coast</p>
+              </div>
             </div>
           </div>
         </div>
