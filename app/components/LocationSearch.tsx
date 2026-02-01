@@ -78,7 +78,7 @@ export default function LocationSearch() {
                         onFocus={() => {
                             if (query.trim().length > 0) setIsOpen(true);
                         }}
-                        className="w-full pl-5 pr-12 py-4 rounded-full border-2 border-transparent focus:border-primary shadow-lg text-gray-800 placeholder-gray-500 outline-none transition-all text-lg font-roboto"
+                        className="w-full pl-5 pr-12 py-4 rounded-full border-2 border-transparent bg-white focus:border-primary shadow-lg text-gray-800 placeholder-gray-500 outline-none transition-all text-lg font-roboto"
                         aria-label="Search suburb"
                     />
                     <button
