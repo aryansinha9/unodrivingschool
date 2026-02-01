@@ -10,6 +10,7 @@ import HomepageFAQ from "@/app/components/HomepageFAQ";
 import CountUp from "@/app/components/CountUp";
 import VisionMission from "@/app/components/VisionMission";
 import VideoModal from "@/app/components/VideoModal";
+import LocationSearch from "@/app/components/LocationSearch";
 
 export default function Home() {
   const [isHeroVideoOpen, setIsHeroVideoOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="relative py-12 lg:py-24 overflow-hidden">
+      <section className="relative py-12 lg:py-24 overflow-visible">
         {/* Background Pattern */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -34,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-          <div className="space-y-6">
+          <div className="space-y-8">
             <h1 className="font-anton text-5xl lg:text-7xl leading-tight uppercase text-text-main">
               LEARN TO <span className="text-primary">DRIVE</span> <br />
               <span className="text-primary">TODAY!</span>
@@ -43,7 +44,13 @@ export default function Home() {
               Learning to drive? Need Driving Lessons? Tired of wasting endless money on Uber? Need to fill your learner log book hours up fast?
               Let’s start your engines and get your independence. Uno Driving School offers holistic affordable driving lessons and is the go-to driving school near you.
             </p>
-            <div className="flex flex-row gap-4 pt-4">
+
+            <div className="space-y-4">
+              <p className="font-anton text-xl text-text-main uppercase">Find your local instructor:</p>
+              <LocationSearch />
+            </div>
+
+            <div className="flex flex-row gap-4 pt-2">
               <Link href="/prices" className="bg-primary text-white font-anton uppercase text-xl px-4 lg:px-8 py-3 rounded-full hover:bg-green-500 transition-transform hover:scale-105 shadow-xl">
                 Book a Lesson
               </Link>
