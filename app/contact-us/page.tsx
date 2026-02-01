@@ -15,7 +15,7 @@ export default function ContactUs() {
                         <h2 className="font-anton text-3xl mb-6">Get In Touch</h2>
                         <div className="space-y-4">
                             <p><strong>Address:</strong> Suite 128, 42 Manilla Street East Brisbane Queensland 4169</p>
-                            <p><strong>Phone:</strong> (07) 3435 1575 / 0456 860 714</p>
+                            <p><strong>Phone:</strong> 0456 860 714</p>
                             <p><strong>Email:</strong> hello@unodrivingschool.com.au</p>
                         </div>
 

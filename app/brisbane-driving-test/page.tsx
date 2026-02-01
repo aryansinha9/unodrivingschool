@@ -83,21 +83,21 @@ export default function BrisbaneDrivingTest() {
                             <div>
                                 <h3 className="font-bold text-xl mb-4 text-primary border-b pb-2">Brisbane Northside</h3>
                                 <ul className="space-y-2 text-gray-700">
-                                    <li>• Carseldine</li>
-                                    <li>• Toowong</li>
-                                    <li>• Strathpine</li>
-                                    <li>• Redcliffe</li>
-                                    <li>• Caboolture</li>
+                                    <li><Link href="/locations/northern-brisbane/carseldine" className="hover:text-primary transition-colors">• Carseldine</Link></li>
+                                    <li><Link href="/locations/western-brisbane/toowong" className="hover:text-primary transition-colors">• Toowong</Link></li>
+                                    <li><Link href="/locations/northern-brisbane/strathpine" className="hover:text-primary transition-colors">• Strathpine</Link></li>
+                                    <li><Link href="/locations/northern-brisbane/redcliffe" className="hover:text-primary transition-colors">• Redcliffe</Link></li>
+                                    <li><Link href="/locations/northern-brisbane/caboolture" className="hover:text-primary transition-colors">• Caboolture</Link></li>
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="font-bold text-xl mb-4 text-primary border-b pb-2">Brisbane Southside</h3>
                                 <ul className="space-y-2 text-gray-700">
-                                    <li>• Cleveland</li>
-                                    <li>• Wynnum</li>
-                                    <li>• Greenslopes</li>
-                                    <li>• Sherwood</li>
-                                    <li>• Logan City</li>
+                                    <li><Link href="/locations/eastern-brisbane/cleveland" className="hover:text-primary transition-colors">• Cleveland</Link></li>
+                                    <li><Link href="/locations/eastern-brisbane/wynnum" className="hover:text-primary transition-colors">• Wynnum</Link></li>
+                                    <li><Link href="/locations/southern-brisbane/greenslopes" className="hover:text-primary transition-colors">• Greenslopes</Link></li>
+                                    <li><Link href="/locations/western-brisbane/sherwood" className="hover:text-primary transition-colors">• Sherwood</Link></li>
+                                    <li><Link href="/locations/southern-brisbane/logan-city" className="hover:text-primary transition-colors">• Logan City</Link></li>
                                 </ul>
                             </div>
                         </div>

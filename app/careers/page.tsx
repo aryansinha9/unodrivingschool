@@ -45,7 +45,7 @@ export default function Careers() {
                             </div>
                             <div>
                                 <h4 className="font-bold text-lg mb-2">Phone</h4>
-                                <p>0734351575</p>
+
                                 <p>0456860714</p>
                             </div>
                             <div className="md:col-span-2">

@@ -14,7 +14,6 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <span className="font-bold text-white">Call:</span>
                                 <div>
-                                    <a href="tel:0734351575" className="hover:text-primary transition-colors block">(07) 3435 1575</a>
                                     <a href="tel:0456860714" className="hover:text-primary transition-colors block">0456 860 714</a>
                                 </div>
                             </li>
@@ -28,7 +27,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="font-bold text-white">Hours:</span>
-                                <span>06.00 AM - 17.00 PM</span>
+                                <span>9:30 a.m. to 5 p.m.</span>
                             </li>
                         </ul>
                     </div>
