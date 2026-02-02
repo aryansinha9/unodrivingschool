@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import PageHeader from "@/app/components/PageHeader";
 import { locations } from "@/app/data/locations";
 import { suburbContent } from "@/app/data/suburb-content";
-import { suburbVideos } from "@/app/data/suburb-videos";
 import VideoPlayer from "@/app/components/VideoPlayer";
 
 type Params = Promise<{ region: string; suburb: string }>;
@@ -57,7 +56,7 @@ export default async function SuburbPage({ params }: { params: Params }) {
                 subtitle={content ? "Start your driving journey today." : `Top-rated driving instructors in ${originalSuburb}, ${regionName}.`}
             />
 
-            <section className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-start">
+            <section className="container mx-auto px-6 py-12 max-w-4xl">
                 <div>
                     <h2 className="font-anton text-3xl mb-6">{pageHeading}</h2>
                     <div className="prose max-w-none text-gray-700 space-y-4">
@@ -110,15 +109,6 @@ export default async function SuburbPage({ params }: { params: Params }) {
                             />
                         </div>
                     </div>
-                </div>
-
-                {/* Video Section */}
-                <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border-4 border-white shadow-lg bg-black">
-                    <VideoPlayer
-                        videoId={suburbVideos[suburb] || "AcHQLgvgftc"}
-                        thumbnailUrl="/location-video-thumbnail.jpg"
-                        title={`Driving Lessons in ${originalSuburb}`}
-                    />
                 </div>
             </section>
 
