@@ -99,17 +99,7 @@ export default async function SuburbPage({ params }: { params: Params }) {
                         </div>
                     )}
 
-                    {/* Generic Homepage Video */}
-                    <div className="mt-12">
-                        <h3 className="font-anton text-2xl mb-4">Best Driving Lessons Even For Beginner!</h3>
-                        <div className="relative pt-[56.25%] w-full rounded-2xl overflow-hidden shadow-xl bg-black">
-                            <VideoPlayer
-                                videoId="AcHQLgvgftc"
-                                thumbnailUrl="/video-thumbnail.png"
-                                title="Best Driving Lessons Even For Beginner!"
-                            />
-                        </div>
-                    </div>
+
                 </div>
 
                 {/* Video Section */}
