@@ -22,8 +22,8 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata: Metadata = {
-  title: "UNO Driving School Clone",
-  description: "Clone of UNO Driving School designed with Next.js and Tailwind CSS",
+  title: "UNO Driving School",
+  description: "Professional driving lessons in Brisbane.",
 };
 
 export default function RootLayout({
