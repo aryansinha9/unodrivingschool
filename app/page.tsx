@@ -300,7 +300,7 @@ export default function Home() {
         <div className="relative pt-[56.25%] w-full rounded-2xl overflow-hidden shadow-xl bg-black">
           <VideoPlayer
             videoId="AcHQLgvgftc"
-            thumbnailUrl="/video-thumbnail.png"
+            thumbnailUrl="/images/live-student.png"
             title="Best Driving Lessons Even For Beginner!"
           />
         </div>
