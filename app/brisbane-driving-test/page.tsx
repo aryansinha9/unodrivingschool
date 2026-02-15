@@ -83,21 +83,111 @@ export default function BrisbaneDrivingTest() {
                             <div>
                                 <h3 className="font-bold text-xl mb-4 text-primary border-b pb-2">Brisbane Northside</h3>
                                 <ul className="space-y-2 text-gray-700">
-                                    <li><Link href="/locations/northern-brisbane/carseldine" className="hover:text-primary transition-colors">• Carseldine</Link></li>
-                                    <li><Link href="/locations/western-brisbane/toowong" className="hover:text-primary transition-colors">• Toowong</Link></li>
-                                    <li><Link href="/locations/northern-brisbane/strathpine" className="hover:text-primary transition-colors">• Strathpine</Link></li>
-                                    <li><Link href="/locations/northern-brisbane/redcliffe" className="hover:text-primary transition-colors">• Redcliffe</Link></li>
-                                    <li><Link href="/locations/northern-brisbane/caboolture" className="hover:text-primary transition-colors">• Caboolture</Link></li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Carseldine%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Carseldine
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Toowong%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Toowong
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Strathpine%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Strathpine
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Redcliffe%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Redcliffe
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Caboolture%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Caboolture
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="font-bold text-xl mb-4 text-primary border-b pb-2">Brisbane Southside</h3>
                                 <ul className="space-y-2 text-gray-700">
-                                    <li><Link href="/locations/eastern-brisbane/cleveland" className="hover:text-primary transition-colors">• Cleveland</Link></li>
-                                    <li><Link href="/locations/eastern-brisbane/wynnum" className="hover:text-primary transition-colors">• Wynnum</Link></li>
-                                    <li><Link href="/locations/southern-brisbane/greenslopes" className="hover:text-primary transition-colors">• Greenslopes</Link></li>
-                                    <li><Link href="/locations/western-brisbane/sherwood" className="hover:text-primary transition-colors">• Sherwood</Link></li>
-                                    <li><Link href="/locations/southern-brisbane/logan-city" className="hover:text-primary transition-colors">• Logan City</Link></li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Cleveland%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Cleveland
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=wynnum%20transport%20and%20main%20roads%20customer%20service%20centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Wynnum
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Greenslopes%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Greenslopes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Sherwood%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Sherwood
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.qld.gov.au/transport/contacts/centres/view?title=Logan%20Transport%20and%20Main%20Roads%20Customer%20Service%20Centre"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:text-primary transition-colors"
+                                        >
+                                            • Logan City
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

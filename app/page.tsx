@@ -22,14 +22,14 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="relative py-12 lg:py-24 overflow-visible">
+      <section className="relative py-12 lg:py-24 overflow-visible bg-background-alt">
         {/* Background Pattern */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-cars-pattern.jpg"
             alt="Driving School Pattern"
             fill
-            className="object-cover opacity-10"
+            className="opacity-10 object-cover"
             priority
           />
         </div>
@@ -91,23 +91,23 @@ export default function Home() {
       </section>
 
       {/* USPs Grid */}
-      <section className="bg-white py-16">
+      <section className="bg-background-alt py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-          <div className="bg-background-alt p-8 rounded-2xl">
+          <div className="bg-background-main p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Driving School Near You</h3>
             <p className="font-roboto text-gray-700">Driving school near you promoting safe and independent drivers. Holistic, friendly approach, and positive culture for a safe learning.</p>
             <div className="mt-4">
               <Link href="/locations" className="text-primary font-anton uppercase hover:underline">Find Location &rarr;</Link>
             </div>
           </div>
-          <div className="bg-background-alt p-8 rounded-2xl">
+          <div className="bg-background-main p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Queensland Learner Log Book</h3>
             <p className="font-roboto text-gray-700">Supercharge your log book progress with Uno! 1-hour lessons = 3 log book hours for the first 10 lessons. Get 30 hours in just 10 lessons!</p>
             <div className="mt-4">
               <Link href="/brisbane-learner-drivers" className="text-primary font-anton uppercase hover:underline">Learn More &rarr;</Link>
             </div>
           </div>
-          <div className="bg-background-alt p-8 rounded-2xl">
+          <div className="bg-background-main p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Affordable Driving Lessons</h3>
             <p className="font-roboto text-gray-700">UNO offers affordable driving lessons with amazing savings on packages in Brisbane. Gift vouchers and Afterpay payment plans available.</p>
             <div className="mt-4">
@@ -127,7 +127,7 @@ export default function Home() {
                 src="/images/homepage_experience.jpg"
                 alt="Happy student passing driving test"
                 fill
-                className="object-cover"
+                className="object-cover object-[60%_50%] lg:object-center"
               />
 
               {/* Experience Counter Overlay */}
@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* Learning Path */}
-      <section className="bg-background-main py-16">
+      <section className="bg-background-alt py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-12">Simple Steps to Get Your License</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -271,7 +271,7 @@ export default function Home() {
               </div>
               <div className="p-8 text-center flex-grow flex flex-col">
                 <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Dept. of Transport fees not included</p>
-                <div className="text-3xl font-anton text-primary mb-6">$195</div>
+                <div className="text-3xl font-anton text-primary mb-6">$200</div>
                 <ul className="space-y-3 text-gray-700 mb-8 flex-grow">
                   <li>60-minute driving lesson</li>
                   <li>Insured automatic car</li>
