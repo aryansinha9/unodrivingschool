@@ -9,6 +9,16 @@ export interface SuburbContent {
 
 export const suburbContent: Record<string, SuburbContent> = {
     // Slug must match the URL slug (e.g. "bardon", "brisbane-city")
+    "arana-hills": {
+        title: "ARANA HILLS DRIVING SCHOOL",
+        heading: "Best Driving Lessons in Arana Hills",
+        description: [
+            "Conquer the hills of Arana Hills. We specialize in teaching hill starts and clutch control on the steep gradients near the Arana Hills Library.",
+            "Learn to navigate the busy intersections along Patricks Road and the traffic around the K-Mart Plaza.",
+            "Our lessons focus on defensive driving skills and safe maneuvering in a hilly, residential environment."
+        ],
+        customCta: "Arana Hills Driving Lessons! Book Now. Expert training for hills and busy intersections."
+    },
     "bardon": {
         title: "BARDON DRIVING SCHOOL",
         heading: "Driving Lessons in Bardon",

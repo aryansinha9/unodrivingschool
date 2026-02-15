@@ -23,6 +23,7 @@ export const locations = {
     "northern-brisbane": [
         "Albion",
         "Alderley",
+        "Arana Hills",
         "Ascot",
         "Aspley",
         "Bald Hills",
@@ -69,8 +70,6 @@ export const locations = {
         "Wavell Heights",
         "Wilston",
         "Windsor",
-        "Wooloowin",
-        "Zillmere",
     ],
     "southern-brisbane": [
         "Acacia Ridge",
@@ -202,6 +201,8 @@ export const locations = {
         "Upper Brookfield",
         "Upper Kedron",
         "Westlake",
+        "Wooloowin",
+        "Zillmere",
     ],
     "logan-city": [
         "Bahrs Scrub",

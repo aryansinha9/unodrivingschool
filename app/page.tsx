@@ -22,7 +22,7 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="relative py-12 lg:py-24 overflow-visible bg-background-alt">
+      <section className="relative py-12 lg:py-24 overflow-visible bg-background-main">
         {/* Background Pattern */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -91,23 +91,23 @@ export default function Home() {
       </section>
 
       {/* USPs Grid */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-main py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-          <div className="bg-background-main p-8 rounded-2xl">
+          <div className="bg-background-alt p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Driving School Near You</h3>
             <p className="font-roboto text-gray-700">Driving school near you promoting safe and independent drivers. Holistic, friendly approach, and positive culture for a safe learning.</p>
             <div className="mt-4">
               <Link href="/locations" className="text-primary font-anton uppercase hover:underline">Find Location &rarr;</Link>
             </div>
           </div>
-          <div className="bg-background-main p-8 rounded-2xl">
+          <div className="bg-background-alt p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Queensland Learner Log Book</h3>
             <p className="font-roboto text-gray-700">Supercharge your log book progress with Uno! 1-hour lessons = 3 log book hours for the first 10 lessons. Get 30 hours in just 10 lessons!</p>
             <div className="mt-4">
               <Link href="/brisbane-learner-drivers" className="text-primary font-anton uppercase hover:underline">Learn More &rarr;</Link>
             </div>
           </div>
-          <div className="bg-background-main p-8 rounded-2xl">
+          <div className="bg-background-alt p-8 rounded-2xl">
             <h3 className="font-anton text-2xl mb-3 text-text-main">Affordable Driving Lessons</h3>
             <p className="font-roboto text-gray-700">UNO offers affordable driving lessons with amazing savings on packages in Brisbane. Gift vouchers and Afterpay payment plans available.</p>
             <div className="mt-4">
@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* Learning Path */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-main py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-12">Simple Steps to Get Your License</h2>
           <div className="grid md:grid-cols-3 gap-8">
