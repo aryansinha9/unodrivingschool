@@ -55,6 +55,34 @@ export default function BrisbaneDrivingTest() {
                         </ul>
                     </div>
 
+                    {/* Preparation Guide - Official Q-Safe Manual */}
+                    <div className="bg-orange-50 rounded-2xl p-8 border-l-4 border-orange-400 relative overflow-hidden">
+                        <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                            <div className="flex-1">
+                                <h3 className="font-anton text-2xl mb-3 text-gray-900 uppercase">Prepare for Your Test</h3>
+                                <p className="text-gray-700 text-lg mb-4">
+                                    The practical driving test in Brisbane requires specific skills and knowledge to pass. We strongly recommend taking the time to carefully review everything you will be assessed on.
+                                </p>
+                            </div>
+                            <div className="shrink-0 w-full md:w-auto">
+                                <a
+                                    href="https://bookingtimes-public.s3.ap-southeast-2.amazonaws.com/366/q-safe-manual-june-2015v4-march-2021-updates.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 bg-white border border-orange-200 hover:border-orange-400 text-gray-800 px-6 py-4 rounded-xl transition-all shadow-sm hover:shadow-md group w-full md:w-auto"
+                                >
+                                    <svg className="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <div className="text-left">
+                                        <span className="block font-bold text-lg leading-none mb-1 text-orange-900">Q-Safe Guide</span>
+                                        <span className="text-sm text-gray-500">Download Official PDF</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Resources & Logs */}
                     <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
                         <h3 className="font-anton text-2xl mb-4 text-blue-900">Essential Requirements</h3>
