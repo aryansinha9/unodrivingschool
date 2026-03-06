@@ -4914,4 +4914,86 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         mapEmbedSrc: "https://maps.google.com/maps?q=Browns+Plains+Transport+Main+Roads+41+Commerce+Dr+Browns+Plains+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
     },
 
+    "everton-park": {
+        metaTitle: "Driving Lessons Everton Park | Automatic Instructor | UNO Driving School",
+        metaDescription: "Driving lessons in Everton Park with UNO Driving School. Patient automatic instructors near South Pine Road and Stafford. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Everton Park with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Everton Park? UNO Driving School provides calm, automatic driving lessons for learners across Everton Park, Stafford, Mitchelton and Keperra. Our 5-star instructors help Everton Park students pass their Queensland driving test on the first attempt.",
+            "Everton Park is a popular inner-northern Brisbane suburb with a well-maintained residential street network and excellent access to the South Pine Road and Stafford Road arterials. The suburb's residential grid is structured, calm, and well-suited to early driving lessons — most streets have low traffic volumes, consistent sightlines, and the predictable geometry that helps new learners develop smooth, controlled vehicle management.",
+            "South Pine Road and Stafford Road are the two main arterial connectors that our Everton Park instructors use for mid-to-late lesson training — providing the multi-lane driving, signalised intersection, and bus zone management experience that the Queensland practical assessment requires. The Everton Hills Shopping Centre precinct on South Pine Road adds car park and commercial pedestrian crossing practice to the lesson toolkit.",
+            "Everton Park learners test at the Virginia Transport and Main Roads Customer Service Centre. Free pickup from Everton Park, Afterpay available. Book today.",
+        ],
+        landmarks: [
+            "South Pine Road — main arterial for multi-lane driving and commercial access management",
+            "Stafford Road — inner-northern connector for intersection and traffic signal practice",
+            "Everton Hills Shopping Centre precinct — car park access and pedestrian crossing training",
+            "Kedron Brook walkway boundary roads — parkland connector for calmer lesson routing",
+            "Everton Park residential grid — quiet streets ideal for early car control",
+            "Our Lady of the Assumption School — school zone compliance and pedestrian crossing awareness",
+        ],
+        testCentre: "Virginia",
+        testCentreAddress: "Virginia Transport and Main Roads Customer Service Centre, 832 Gympie Rd, Chermside QLD 4032",
+        nearbySuburbs: [
+            { name: "Stafford", slug: "stafford", region: "northern-brisbane" },
+            { name: "Mitchelton", slug: "mitchelton", region: "northern-brisbane" },
+            { name: "Keperra", slug: "keperra", region: "northern-brisbane" },
+        ],
+        reviews: [
+            { name: "Phoebe", suburb: "Everton Park", rating: 5, text: "UNO used South Pine Road and the Everton Hills precinct brilliantly — exactly the right lesson progression. Passed first go!" },
+            { name: "Leon", suburb: "Everton Park", rating: 5, text: "Patient and professional. Great local knowledge of the area. Passed first attempt after 11 lessons. Highly recommend UNO." },
+            { name: "Di", suburb: "Stafford", rating: 5, text: "Excellent experience. Calm teaching and always on time. Passed first try. Very happy with UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Everton Park?", answer: "Everton Park lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Everton Park?", answer: "Yes — free pickup from Everton Park, Stafford, Mitchelton and Keperra." },
+            { question: "Which test centre do Everton Park learners use?", answer: "Everton Park learners test at the Virginia Transport and Main Roads Centre on Gympie Road, Chermside." },
+            { question: "Are automatic lessons available in Everton Park?", answer: "Yes, all UNO Everton Park lessons are in modern automatic vehicles." },
+            { question: "Is Everton Park good for learning to drive?", answer: "Yes — the residential grid is ideal for first lessons and South Pine Road provides excellent multi-lane and commercial driving experience." },
+            { question: "Can UNO help nervous drivers in Everton Park?", answer: "Absolutely. Everton Park's quiet residential streets are a very comfortable and low-pressure early-lesson environment." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Virginia+Transport+Main+Roads+832+Gympie+Rd+Chermside+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
+    "virginia": {
+        metaTitle: "Driving Lessons Virginia | Automatic Instructor | UNO Driving School",
+        metaDescription: "Book driving lessons in Virginia with UNO Driving School. Patient automatic instructors near Gympie Road and Nudgee Road. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Virginia with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Virginia? UNO Driving School provides calm, automatic driving lessons for learners across Virginia, Zillmere, Aspley and Boondall. Our 5-star instructors help Virginia students pass their Queensland driving test on the first attempt.",
+            "Virginia is a low-density mixed-use northern Brisbane suburb positioned between the Gympie Road and Nudgee Road arterial corridors. The residential areas feature well-spaced, quiet streets with good sightlines — an ideal environment for early driving lessons. The industrial and commercial zones provide a diverse range of road types that prepare Virginia learners for the full breadth of Queensland road conditions.",
+            "Virginia is also the location of the Transport and Main Roads Customer Service Centre where northern Brisbane students sit their practical driving test — making Virginia's road network directly relevant pre-test training territory. Our instructors use the exact test centre approach roads, including the surrounding Gympie Road corridor, as deliberate pre-test familiarisation routes in the weeks before assessment day.",
+            "Virginia learners test at the Virginia Transport and Main Roads Customer Service Centre. Free pickup from Virginia, modern automatic vehicles, Afterpay available. Book today.",
+        ],
+        landmarks: [
+            "Virginia Transport and Main Roads Customer Service Centre — direct pre-test route familiarisation",
+            "Gympie Road — main northern Brisbane arterial for multi-lane driving and signal management",
+            "Nudgee Road — eastern connector for suburban and arterial road progression",
+            "Virginia commercial zone roads — industrial access roads for wide-lane awareness practice",
+            "Zillmere boundary roads — residential connector for estate street practice",
+            "Virginia State School — school zone compliance and pedestrian crossing awareness",
+        ],
+        testCentre: "Virginia",
+        testCentreAddress: "Virginia Transport and Main Roads Customer Service Centre, 832 Gympie Rd, Chermside QLD 4032",
+        nearbySuburbs: [
+            { name: "Zillmere", slug: "zillmere", region: "northern-brisbane" },
+            { name: "Aspley", slug: "aspley", region: "northern-brisbane" },
+            { name: "Boondall", slug: "boondall", region: "northern-brisbane" },
+        ],
+        reviews: [
+            { name: "Caitlin", suburb: "Virginia", rating: 5, text: "Being so close to the test centre meant our lessons were perfect preparation for test day. Passed first go with UNO!" },
+            { name: "Patrick", suburb: "Virginia", rating: 5, text: "Patient and professional. The test centre approach roads were practised so many times — I felt completely at ease on test day." },
+            { name: "Heather", suburb: "Zillmere", rating: 5, text: "Excellent teaching. Calm and thorough. Passed first try. Highly recommend UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Virginia?", answer: "Virginia lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Virginia?", answer: "Yes — free pickup from Virginia, Zillmere, Aspley and Boondall." },
+            { question: "Which test centre do Virginia learners use?", answer: "Virginia learners test at the Virginia Transport and Main Roads Customer Service Centre at 832 Gympie Road, right in the suburb." },
+            { question: "Are automatic lessons available in Virginia?", answer: "Yes, all UNO Virginia lessons are in modern automatic vehicles." },
+            { question: "Is Virginia good for learning to drive?", answer: "Yes — driving past the test centre on lessons is excellent pre-test familiarisation. The local roads give a great range of training environments." },
+            { question: "Can UNO help nervous drivers in Virginia?", answer: "Absolutely. Starting lessons right near the test centre means no surprises on assessment day — a real confidence booster." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Virginia+Transport+Main+Roads+832+Gympie+Rd+Chermside+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
 };
