@@ -64,7 +64,7 @@ export default function Navbar() {
                     <Link href="/faqs" className="hover:text-primary transition-colors">FAQs</Link>
                     <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
                     <Link href="/contact-us" className="hover:text-primary transition-colors">Contact</Link>
-                    <Link href="/prices" className="bg-primary text-white font-anton uppercase px-6 py-2 rounded-full hover:bg-green-500 transition-colors shadow-lg ml-4">
+                    <Link href="/contact-us" className="bg-primary text-white font-anton uppercase px-6 py-2 rounded-full hover:bg-green-500 transition-colors shadow-lg ml-4">
                         Book Now
                     </Link>
                 </nav>
@@ -112,7 +112,7 @@ export default function Navbar() {
                     <Link href="/contact-us" onClick={toggleMobileMenu} className="hover:text-primary">Contact</Link>
 
                     <Link
-                        href="/prices"
+                        href="/contact-us"
                         onClick={toggleMobileMenu}
                         className="bg-primary text-white font-anton uppercase px-8 py-3 rounded-full hover:bg-green-500 shadow-lg text-xl mt-4"
                     >
