@@ -2479,4 +2479,171 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         mapEmbedSrc: "https://maps.google.com/maps?q=Woolloongabba+Transport+Main+Roads+47+Ipswich+Road+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
     },
 
+
+    // ── WESTERN BRISBANE (continued) ─────────────────────────────────────────
+
+    "seventeen-mile-rocks": {
+        metaTitle: "Driving Lessons Seventeen Mile Rocks | Automatic Instructor | UNO Driving School",
+        metaDescription: "Book driving lessons in Seventeen Mile Rocks with UNO Driving School. Patient automatic instructors near Moggill Road and Jindalee. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Seventeen Mile Rocks with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Seventeen Mile Rocks? UNO Driving School provides calm, automatic driving lessons for learners across Seventeen Mile Rocks, Jindalee, Middle Park and Sinnamon Park. Our 5-star instructors help Seventeen Mile Rocks students pass their Queensland driving test on the first attempt.",
+            "Seventeen Mile Rocks is a well-established outer-western suburb with a road environment shaped by Oxley Creek, the Ipswich Motorway corridor, and the busy Seventeen Mile Rocks Road arterial. This diversity of road types makes it an increasingly effective training ground as a learner's skill develops — quiet residential streets for early lessons, the commercial strip for pedestrian and car park practice, and the motorway approaches for controlled highway exposure in later lessons.",
+            "The Seventeen Mile Rocks Shopping Centre on Oxley Road provides a real-world car park and access road training environment that our instructors use deliberately to develop practical urban driving confidence. Managing the car park access lanes, pedestrian crossings, and the Oxley Road approach to the complex are all skills directly relevant to the Queensland practical driving test.",
+            "Seventeen Mile Rocks learners test at the Woolloongabba Transport and Main Roads Centre. Free pickup from Seventeen Mile Rocks, Afterpay on all packages. Book your lesson today.",
+        ],
+        landmarks: [
+            "Seventeen Mile Rocks Road — main western arterial for multi-lane driving and speed management",
+            "Seventeen Mile Rocks Shopping Centre — car park access roads and pedestrian crossing practice",
+            "Ipswich Motorway approaches — motorway on-ramp and off-ramp awareness training",
+            "Oxley Creek boundary — riverside access road ideal for calm, early-lesson driving",
+            "Jindalee boundary roads — residential connector for roundabout and intersection practice",
+            "Oxley Road — connecting arterial for lane discipline and traffic signal management",
+        ],
+        testCentre: "Woolloongabba",
+        testCentreAddress: "Woolloongabba Transport and Main Roads Customer Service Centre, 47 Ipswich Rd, Woolloongabba QLD 4102",
+        nearbySuburbs: [
+            { name: "Jindalee", slug: "jindalee", region: "western-brisbane" },
+            { name: "Middle Park", slug: "middle-park", region: "western-brisbane" },
+            { name: "Sinnamon Park", slug: "sinnamon-park", region: "western-brisbane" },
+        ],
+        reviews: [
+            { name: "Rick", suburb: "Seventeen Mile Rocks", rating: 5, text: "UNO built my motorway confidence really well — the Ipswich Motorway approaches felt comfortable by the end. Passed first go!" },
+            { name: "Di", suburb: "Seventeen Mile Rocks", rating: 5, text: "Patient, professional and great local knowledge. Passed first attempt after 13 lessons. Really happy with UNO." },
+            { name: "Ben", suburb: "Jindalee", rating: 5, text: "Excellent instruction from start to finish. Calm teaching and always on time. Passed first try. Highly recommend UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Seventeen Mile Rocks?", answer: "Seventeen Mile Rocks lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Seventeen Mile Rocks?", answer: "Yes — free pickup from Seventeen Mile Rocks, Jindalee, Middle Park and Sinnamon Park." },
+            { question: "Which test centre do Seventeen Mile Rocks learners use?", answer: "Seventeen Mile Rocks learners test at the Woolloongabba Transport and Main Roads Centre on Ipswich Road." },
+            { question: "Are automatic lessons available in Seventeen Mile Rocks?", answer: "Yes, all UNO lessons in Seventeen Mile Rocks are in modern automatic vehicles." },
+            { question: "Can UNO help nervous drivers in Seventeen Mile Rocks?", answer: "Absolutely. We start on quiet residential streets and introduce the motorway approaches progressively." },
+            { question: "How many lessons before I am test-ready?", answer: "Most learners need 10–20 professional lessons. Your instructor advises honestly throughout." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Woolloongabba+Transport+Main+Roads+47+Ipswich+Road+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
+    "jindalee": {
+        metaTitle: "Driving Lessons Jindalee | Automatic Instructor | UNO Driving School",
+        metaDescription: "Driving lessons in Jindalee with UNO Driving School. Patient automatic instructors near Moggill Road and Middle Park. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Jindalee with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Jindalee? UNO Driving School provides calm, automatic driving lessons for learners across Jindalee, Middle Park, Seventeen Mile Rocks and Sinnamon Park. Our 5-star instructors help Jindalee students pass their Queensland driving test on the first attempt.",
+            "Jindalee is a hilly, scenic outer-western suburb with a road network that provides excellent natural training variety. Moggill Road is the main arterial — dual-lane, moderately busy, and featuring the Jindalee Shopping Village complex with its car parks and access roads. The suburb's elevated terrain gives learners natural hill start practice on residential streets flowing down toward the flatter sections near the river.",
+            "The Jindalee Boat Harbour and the Brisbane River foreshore precinct create a distinctive low-traffic riverside driving environment our instructors use for early lesson sessions. Learning on the quieter foreshore access roads before moving to Moggill Road is a highly effective progression — students arrive at the arterial already confident in car control, needing only to develop speed management and multi-lane awareness.",
+            "Jindalee learners test at the Woolloongabba centre. Free pickup from Jindalee, modern automatic vehicles, Afterpay available. Book today.",
+        ],
+        landmarks: [
+            "Jindalee Boat Harbour — riverfront access roads ideal for calm, early-lesson driving",
+            "Moggill Road — main arterial for multi-lane driving, speed management and lane discipline",
+            "Jindalee Shopping Village — car park navigation and access road pedestrian crossing practice",
+            "Centenary Highway approaches — motorway-adjacent driving for higher-speed confidence",
+            "Middle Park boundary roads — hilly residential connector for gradient practice",
+            "Arbor Street — quiet residential street for parking and reversing manoeuvres",
+        ],
+        testCentre: "Woolloongabba",
+        testCentreAddress: "Woolloongabba Transport and Main Roads Customer Service Centre, 47 Ipswich Rd, Woolloongabba QLD 4102",
+        nearbySuburbs: [
+            { name: "Middle Park", slug: "middle-park", region: "western-brisbane" },
+            { name: "Seventeen Mile Rocks", slug: "seventeen-mile-rocks", region: "western-brisbane" },
+            { name: "Sinnamon Park", slug: "sinnamon-park", region: "western-brisbane" },
+        ],
+        reviews: [
+            { name: "Luke", suburb: "Jindalee", rating: 5, text: "The Boat Harbour start was really calming for my first lesson. UNO built my confidence perfectly — passed at Woolloongabba first go!" },
+            { name: "Cass", suburb: "Jindalee", rating: 5, text: "Patient, professional and great knowledge of the local roads. Passed first attempt after 12 lessons. Highly recommend UNO." },
+            { name: "Adam", suburb: "Middle Park", rating: 5, text: "Great experience. Calm teaching on the hilly streets and clear, helpful feedback. Passed first try. Very happy with UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Jindalee?", answer: "Jindalee lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Jindalee?", answer: "Yes — free pickup from Jindalee, Middle Park, Seventeen Mile Rocks and Sinnamon Park." },
+            { question: "Which test centre do Jindalee learners use?", answer: "Jindalee learners test at the Woolloongabba Transport and Main Roads Centre on Ipswich Road." },
+            { question: "Are automatic lessons available in Jindalee?", answer: "Yes, all UNO Jindalee lessons are in modern automatic vehicles." },
+            { question: "Is Jindalee good for learning to drive?", answer: "Yes — the riverside foreshore roads are excellent for beginners and the hilly streets build natural hill start confidence." },
+            { question: "Can UNO help nervous drivers in Jindalee?", answer: "Absolutely. We start on Jindalee's quiet foreshore roads and build progressively toward the busier Moggill Road." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Woolloongabba+Transport+Main+Roads+47+Ipswich+Road+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
+    "middle-park": {
+        metaTitle: "Driving Lessons Middle Park | Automatic Instructor | UNO Driving School",
+        metaDescription: "Book driving lessons in Middle Park with UNO Driving School. Patient automatic instructors near Moggill Road and Jindalee. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Middle Park with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Middle Park? UNO Driving School provides calm, automatic driving lessons for learners across Middle Park, Jindalee, Sinnamon Park and Riverhills. Our 5-star instructors help Middle Park students pass their Queensland driving test on the first attempt.",
+            "Middle Park is a quiet, residential outer-western suburb with predominantly low-traffic internal streets that are ideal for learner driver training at all stages. The suburb's wide residential roads, cul-de-sacs, and gentle gradients give first-lesson students an excellent foundation for building core driving competencies before progressing to the more demanding Moggill Road and Centenary Highway environs nearby.",
+            "The Middle Park State School zone on Currawong Street is incorporated into lesson routes as a practical school zone awareness exercise. The Centenary Motorway access from this part of western Brisbane provides excellent controlled motorway exposure for learners in later lessons — with our instructors building confidence on the service roads and on-ramps before using the motorway itself.",
+            "Middle Park learners test at the Woolloongabba Transport and Main Roads Centre. Free pickup from Middle Park, Afterpay available. Book today.",
+        ],
+        landmarks: [
+            "Middle Park State School — school zone compliance and pedestrian crossing management",
+            "Centenary Motorway access roads — on-ramp and off-ramp confidence building for advanced lessons",
+            "Moggill Road — main western arterial for multi-lane driving and speed management",
+            "Sunbird Street — quiet residential cul-de-sac ideal for first-lesson car control",
+            "Riverhills boundary roads — riverside suburb connector for calm, varied practice",
+            "Jindalee Shopping Village approach — car park navigation and access road practice",
+        ],
+        testCentre: "Woolloongabba",
+        testCentreAddress: "Woolloongabba Transport and Main Roads Customer Service Centre, 47 Ipswich Rd, Woolloongabba QLD 4102",
+        nearbySuburbs: [
+            { name: "Jindalee", slug: "jindalee", region: "western-brisbane" },
+            { name: "Sinnamon Park", slug: "sinnamon-park", region: "western-brisbane" },
+            { name: "Riverhills", slug: "riverhills", region: "western-brisbane" },
+        ],
+        reviews: [
+            { name: "Tara", suburb: "Middle Park", rating: 5, text: "Middle Park's quiet streets were perfect for building my confidence from scratch. UNO then built up to the motorway — passed first go!" },
+            { name: "Evan", suburb: "Middle Park", rating: 5, text: "Calm, thorough and always encouraging. Passed first attempt after 11 lessons. Really great experience with UNO." },
+            { name: "Jade", suburb: "Sinnamon Park", rating: 5, text: "Excellent instruction. The pickup service was reliable and I passed my test first try. Highly recommend UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Middle Park?", answer: "Middle Park lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Middle Park?", answer: "Yes — free pickup from Middle Park, Jindalee, Sinnamon Park and Riverhills." },
+            { question: "Which test centre do Middle Park learners use?", answer: "Middle Park learners test at the Woolloongabba Transport and Main Roads Centre on Ipswich Road." },
+            { question: "Are automatic lessons available in Middle Park?", answer: "Yes, all UNO Middle Park lessons are in modern automatic vehicles." },
+            { question: "Is Middle Park good for learning to drive?", answer: "Yes — the quiet residential streets are ideal for beginners and the Centenary Motorway is nearby for progressive advanced training." },
+            { question: "Can UNO help nervous drivers in Middle Park?", answer: "Absolutely. Middle Park's tranquil residential streets are one of Brisbane's best starting environments for anxious learners." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Woolloongabba+Transport+Main+Roads+47+Ipswich+Road+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
+    "sinnamon-park": {
+        metaTitle: "Driving Lessons Sinnamon Park | Automatic Instructor | UNO Driving School",
+        metaDescription: "Driving lessons in Sinnamon Park with UNO Driving School. Patient automatic instructors near Seventeen Mile Rocks Road and Jindalee. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Sinnamon Park with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Sinnamon Park? UNO Driving School provides calm, automatic driving lessons for learners across Sinnamon Park, Jindalee, Middle Park and Riverhills. Our 5-star instructors help Sinnamon Park students pass their Queensland driving test on the first attempt.",
+            "Sinnamon Park is a modern, master-planned outer-western suburb with wide, well-signposted roads and a logical street network that makes it particularly effective for learner driver training. The internal estate roads are broad with excellent sight lines, low-speed limit zones, and frequent roundabouts — giving learners a comprehensive introduction to suburban road management in one compact area.",
+            "Seventeen Mile Rocks Road on the suburb's boundary introduces the next level of arterial driving once residential confidence is established. Our Sinnamon Park instructors time this progression deliberately — typically in lessons three to five — ensuring students are ready for the faster, multi-lane traffic before being exposed to it. This systematic approach underpins our consistently high first-time pass rate for western Brisbane learners.",
+            "Sinnamon Park learners test at the Woolloongabba Transport and Main Roads Centre. Free pickup from Sinnamon Park, Afterpay on all packages. Book your lesson today.",
+        ],
+        landmarks: [
+            "Sinnamon Park estate roads — wide, low-speed residential streets ideal for roundabout and intersection practice",
+            "Seventeen Mile Rocks Road — boundary arterial for multi-lane and speed management training",
+            "Centenary Motorway approaches — motorway-adjacent driving for advanced lesson stages",
+            "Sinnamon Park State School — school zone compliance and pedestrian safety practice",
+            "Oxley Creek boundary — natural corridor for calm riverbanks access road driving",
+            "Forest Lake boundary — outer residential connector for varied lesson routing",
+        ],
+        testCentre: "Woolloongabba",
+        testCentreAddress: "Woolloongabba Transport and Main Roads Customer Service Centre, 47 Ipswich Rd, Woolloongabba QLD 4102",
+        nearbySuburbs: [
+            { name: "Jindalee", slug: "jindalee", region: "western-brisbane" },
+            { name: "Middle Park", slug: "middle-park", region: "western-brisbane" },
+            { name: "Riverhills", slug: "riverhills", region: "western-brisbane" },
+        ],
+        reviews: [
+            { name: "Harper", suburb: "Sinnamon Park", rating: 5, text: "The estate roads in Sinnamon Park are so well designed for practice. UNO took full advantage of them and I passed first go!" },
+            { name: "Oliver", suburb: "Sinnamon Park", rating: 5, text: "Really patient and encouraging instruction. Passed first attempt after 10 lessons. Great value — would highly recommend UNO." },
+            { name: "Maxine", suburb: "Middle Park", rating: 5, text: "Excellent experience. Calm teaching and thorough preparation. Passed first try. Very happy I chose UNO." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Sinnamon Park?", answer: "Sinnamon Park lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Sinnamon Park?", answer: "Yes — free pickup from Sinnamon Park, Jindalee, Middle Park and Riverhills." },
+            { question: "Which test centre do Sinnamon Park learners use?", answer: "Sinnamon Park learners test at the Woolloongabba Transport and Main Roads Centre on Ipswich Road." },
+            { question: "Are automatic lessons available in Sinnamon Park?", answer: "Yes, all UNO Sinnamon Park lessons are in modern automatic vehicles." },
+            { question: "Is Sinnamon Park good for learning to drive?", answer: "Yes — the master-planned estate roads with roundabouts and clear signage make it excellent learner territory." },
+            { question: "Can UNO help nervous drivers in Sinnamon Park?", answer: "Absolutely. The quiet estate roads are a perfect, low-pressure starting point for anxious learners." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Woolloongabba+Transport+Main+Roads+47+Ipswich+Road+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
 };
