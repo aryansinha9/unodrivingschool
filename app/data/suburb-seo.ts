@@ -12168,5 +12168,45 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         mapEmbedSrc: "https://maps.google.com/maps?q=Logan+Central+Transport+Main+Roads+Logan+Central+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
     },
 
+    "riverbend": {
+        metaTitle: "Driving Lessons Riverbend | Automatic Instructor | UNO Driving School",
+        metaDescription: "Driving lessons in Riverbend with UNO Driving School. Patient automatic instructors near Jimboomba. 5-star rated. Book today.",
+        h1: "Affordable Driving Lessons in Riverbend with a Patient Local Instructor",
+        bodyParagraphs: [
+            "Looking for driving lessons in Riverbend? UNO Driving School provides calm, automatic driving lessons for learners across Riverbend, Jimboomba, South Maclean and Flagstone. Our 5-star instructors help students confidently pass their Queensland driving test on the first attempt.",
+            "Riverbend is an exceptionally new, master-planned residential basin rapidly developing entirely out of deep rural acreage near Jimboomba. The massive new estates feature perfectly flat, extraordinarily wide kerbed roads devoid of established dense traffic.",
+            "Our instructors use the deep isolation of these new estates to train absolute beginners in flawless foundational parking and steering without any cross-suburban pressure. Once a learner has completely secured their pedal command in the pristine courts, they are pushed upward onto the intense logistics heavy stretches of the Mount Lindesay Highway, establishing exactly the high-speed resilience required to pass the Logan City TMR test.",
+            "Riverbend learners sit their practical test at the Logan City TMR Customer Service Centre. Free pickup from Riverbend, modern automatic vehicles, Afterpay available. Book today.",
+        ],
+        landmarks: [
+            "Riverbend master-planned estates — incredibly wide, perfectly kerbed internal residential loops perfectly built for stress-free foundational parking",
+            "Mount Lindesay Highway — massively trafficked, high-volume multi-lane connector demanding extreme continuous speed management and excellent merging",
+            "Jimboomba boundary (eastern flow) — immediate shift from quiet new suburbia straight into immense regional commercial and retail intensity",
+            "Flagstone boundary (western transit) — gateway into further hyper-modern master-planned spreads",
+            "South Maclean boundary (northern transition) — gateway into vast, deeply isolated rural and unsealed acreage spreads",
+        ],
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43 Elm Park Dr, Logan Central QLD 4114",
+        nearbySuburbs: [
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" },
+            { name: "Flagstone", slug: "flagstone", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" },
+        ],
+        reviews: [
+            { name: "Lucas", suburb: "Riverbend", rating: 5, text: "Learning to park in the new estates in Riverbend was so easy because the roads are so fresh and wide. Jumping onto the highway later felt totally safe. Passed first go!" },
+            { name: "Ava", suburb: "Riverbend", rating: 5, text: "Patient and professional. Because we were protected inside the empty new estates initially, my first few lessons were actually highly relaxing." },
+            { name: "Emily", suburb: "Jimboomba", rating: 5, text: "Excellent experience. Calm teaching and always on time even in the southern stretches. Passed first try." },
+        ],
+        faqs: [
+            { question: "How much are driving lessons in Riverbend?", answer: "Riverbend lessons start from $75/hour. 10-lesson package $700; Zoom Test Package $200. Afterpay available." },
+            { question: "Do you pick up from Riverbend?", answer: "Yes — free pickup from anywhere in Riverbend, Jimboomba, South Maclean and Flagstone." },
+            { question: "Which test centre do Riverbend learners use?", answer: "Riverbend learners travel straight north to test at the Logan City Transport and Main Roads Customer Service Centre." },
+            { question: "Are automatic lessons available in Riverbend?", answer: "Yes, all UNO Riverbend lessons are in modern automatic vehicles, practically mandatory for crossing the massive multi-lane transitions out of the suburb." },
+            { question: "Is Riverbend good for learning to drive?", answer: "It is exceptionally balanced. The pristine isolation of the new estates builds foundational confidence, while the Mount Lindesay Highway provides essential high-speed pressure." },
+            { question: "Can UNO help nervous drivers in Riverbend?", answer: "Absolutely. We perfectly insulate the student deep within the quiet, flat residential courts until their pedalling is flawless." },
+        ],
+        mapEmbedSrc: "https://maps.google.com/maps?q=Logan+Central+Transport+Main+Roads+Logan+Central+QLD&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+
 
 };
