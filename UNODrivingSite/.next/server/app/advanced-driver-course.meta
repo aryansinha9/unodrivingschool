@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/advanced-driver-course/layout,_N_T_/advanced-driver-course/page,_N_T_/advanced-driver-course"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/advanced-driver-course/__PAGE__",
+    "/advanced-driver-course",
+    "/_index",
+    "/_head"
+  ]
+}
