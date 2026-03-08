@@ -12221,12 +12221,12 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Spring Hill",
+        testCentreAddress: "Spring Hill Customer Service Centre, 4/441 Boundary St, Spring Hill QLD 4000",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bowen%20Hills%2C%20QLD%2C%20Australia+(Driving%20School%20Bowen%20Hills)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
+            { name: "Newstead", slug: "newstead", region: "inner-brisbane" },
             { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
         ],
         faqs: [
@@ -12253,13 +12253,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Spring Hill",
+        testCentreAddress: "Spring Hill Customer Service Centre, 4/441 Boundary St, Spring Hill QLD 4000",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Brisbane%20City%2C%20QLD%2C%20Australia+(Driving%20School%20Brisbane%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
+            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "South Brisbane", slug: "south-brisbane", region: "inner-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Brisbane City?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12285,13 +12285,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Spring Hill",
+        testCentreAddress: "Spring Hill Customer Service Centre, 4/441 Boundary St, Spring Hill QLD 4000",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Petrie%20Terrace%2C%20QLD%2C%20Australia+(Driving%20School%20Petrie%20Terrace)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Paddington", slug: "paddington", region: "inner-brisbane" },
+            { name: "Red Hill", slug: "red-hill", region: "inner-brisbane" },
+            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Petrie Terrace?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12317,13 +12317,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Spring Hill",
+        testCentreAddress: "Spring Hill Customer Service Centre, 4/441 Boundary St, Spring Hill QLD 4000",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Spring%20Hill%2C%20QLD%2C%20Australia+(Driving%20School%20Spring%20Hill)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Petrie Terrace", slug: "petrie-terrace", region: "inner-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Spring Hill?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12349,13 +12349,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Strathpine",
+        testCentreAddress: "Strathpine Transport and Main Roads Customer Service Centre, 1/32 Dixon St, Strathpine QLD 4500",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bald%20Hills%2C%20QLD%2C%20Australia+(Driving%20School%20Bald%20Hills)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Carseldine", slug: "carseldine", region: "northern-brisbane" },
+            { name: "Strathpine", slug: "strathpine", region: "northern-brisbane" },
+            { name: "Bracken Ridge", slug: "bracken-ridge", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Bald Hills?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12381,13 +12381,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Carseldine",
+        testCentreAddress: "Carseldine Transport and Main Roads Customer Service Centre, 532 Beams Rd, Carseldine QLD 4034",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bracken%20Ridge%2C%20QLD%2C%20Australia+(Driving%20School%20Bracken%20Ridge)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Bald Hills", slug: "bald-hills", region: "northern-brisbane" },
+            { name: "Sandgate", slug: "sandgate", region: "northern-brisbane" },
+            { name: "Fitzgibbon", slug: "fitzgibbon", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Bracken Ridge?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12413,13 +12413,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Toowong",
+        testCentreAddress: "Toowong Transport and Main Roads Customer Service Centre, Level 1, Toowong Village, 9 Sherwood Rd, Toowong QLD 4066",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Gaythorne%2C%20QLD%2C%20Australia+(Driving%20School%20Gaythorne)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Enoggera", slug: "enoggera", region: "northern-brisbane" },
+            { name: "Mitchelton", slug: "mitchelton", region: "western-brisbane" },
+            { name: "Everton Park", slug: "everton-park", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Gaythorne?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12445,13 +12445,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Virginia",
+        testCentreAddress: "Virginia Transport and Main Roads Customer Service Centre, 271 Toombul Rd, Northgate QLD 4013",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Kalinga%2C%20QLD%2C%20Australia+(Driving%20School%20Kalinga)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Wooloowin", slug: "wooloowin", region: "northern-brisbane" },
+            { name: "Clayfield", slug: "clayfield", region: "northern-brisbane" },
+            { name: "Wavell Heights", slug: "wavell-heights", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Kalinga?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12477,13 +12477,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Virginia",
+        testCentreAddress: "Virginia Transport and Main Roads Customer Service Centre, 271 Toombul Rd, Northgate QLD 4013",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Northgate%2C%20QLD%2C%20Australia+(Driving%20School%20Northgate)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Nundah", slug: "nundah", region: "northern-brisbane" },
+            { name: "Banyo", slug: "banyo", region: "northern-brisbane" },
+            { name: "Virginia", slug: "virginia", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Northgate?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12509,13 +12509,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Virginia",
+        testCentreAddress: "Virginia Transport and Main Roads Customer Service Centre, 271 Toombul Rd, Northgate QLD 4013",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Nudgee%20Beach%2C%20QLD%2C%20Australia+(Driving%20School%20Nudgee%20Beach)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Nudgee", slug: "nudgee", region: "northern-brisbane" },
+            { name: "Banyo", slug: "banyo", region: "northern-brisbane" },
+            { name: "Northgate", slug: "northgate", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Nudgee Beach?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12541,13 +12541,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Strathpine",
+        testCentreAddress: "Strathpine Transport and Main Roads Customer Service Centre, 1/32 Dixon St, Strathpine QLD 4500",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Strathpine%2C%20QLD%2C%20Australia+(Driving%20School%20Strathpine)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Bray Park", slug: "bray-park", region: "northern-brisbane" },
+            { name: "Lawnton", slug: "lawnton", region: "northern-brisbane" },
+            { name: "Bald Hills", slug: "bald-hills", region: "northern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Strathpine?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12573,13 +12573,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Sherwood",
+        testCentreAddress: "Sherwood Transport and Main Roads Customer Service Centre, 828 Sherwood Rd, Sherwood QLD 4075",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Archerfield%2C%20QLD%2C%20Australia+(Driving%20School%20Archerfield)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Rocklea", slug: "rocklea", region: "southern-brisbane" },
+            { name: "Coopers Plains", slug: "coopers-plains", region: "southern-brisbane" },
+            { name: "Acacia Ridge", slug: "acacia-ridge", region: "southern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Archerfield?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12605,13 +12605,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Sherwood",
+        testCentreAddress: "Sherwood Transport and Main Roads Customer Service Centre, 828 Sherwood Rd, Sherwood QLD 4075",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Larapinta%2C%20QLD%2C%20Australia+(Driving%20School%20Larapinta)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Pallara", slug: "pallara", region: "southern-brisbane" },
+            { name: "Heathwood", slug: "heathwood", region: "southern-brisbane" },
+            { name: "Parkinson", slug: "parkinson", region: "southern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Larapinta?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12637,13 +12637,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Logan%20City%2C%20QLD%2C%20Australia+(Driving%20School%20Logan%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Logan Central", slug: "logan-central", region: "logan-city" },
+            { name: "Woodridge", slug: "woodridge", region: "logan-city" },
+            { name: "Kingston", slug: "kingston", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Logan City?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12669,13 +12669,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Greenslopes",
+        testCentreAddress: "Greenslopes Transport and Main Roads Customer Service Centre, cnr Ipswich Rd & Greenslopes St, Greenslopes QLD 4120",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Nathan%2C%20QLD%2C%20Australia+(Driving%20School%20Nathan)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Macgregor", slug: "macgregor", region: "southern-brisbane" },
+            { name: "Salisbury", slug: "salisbury", region: "southern-brisbane" },
+            { name: "Mount Gravatt", slug: "mount-gravatt", region: "southern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Nathan?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12701,13 +12701,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Sherwood",
+        testCentreAddress: "Sherwood Transport and Main Roads Customer Service Centre, 828 Sherwood Rd, Sherwood QLD 4075",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Sumner%2C%20QLD%2C%20Australia+(Driving%20School%20Sumner)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Darra", slug: "darra", region: "western-brisbane" },
+            { name: "Jamboree Heights", slug: "jamboree-heights", region: "western-brisbane" },
+            { name: "Mount Ommaney", slug: "mount-ommaney", region: "western-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Sumner?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12733,13 +12733,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Wynnum",
+        testCentreAddress: "Wynnum Transport and Main Roads Customer Service Centre, 143 Berrima St, Wynnum QLD 4178",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Chandler%2C%20QLD%2C%20Australia+(Driving%20School%20Chandler)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Capalaba", slug: "capalaba", region: "eastern-brisbane" },
+            { name: "Belmont", slug: "belmont", region: "eastern-brisbane" },
+            { name: "Tingalpa", slug: "tingalpa", region: "eastern-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Chandler?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12797,13 +12797,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Toowong",
+        testCentreAddress: "Toowong Transport and Main Roads Customer Service Centre, Level 1, Toowong Village, 9 Sherwood Rd, Toowong QLD 4066",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Enoggera%20Reservoir%2C%20QLD%2C%20Australia+(Driving%20School%20Enoggera%20Reservoir)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "The Gap", slug: "the-gap", region: "western-brisbane" },
+            { name: "Upper Kedron", slug: "upper-kedron", region: "northern-brisbane" },
+            { name: "Keperra", slug: "keperra", region: "western-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Enoggera Reservoir?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12829,13 +12829,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Ipswich",
+        testCentreAddress: "Ipswich Transport and Main Roads Customer Service Centre, 27 Colvin St, North Ipswich QLD 4305",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Lake%20Manchester%2C%20QLD%2C%20Australia+(Driving%20School%20Lake%20Manchester)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Mount Crosby", slug: "mount-crosby", region: "western-brisbane" },
+            { name: "Karana Downs", slug: "karana-downs", region: "western-brisbane" },
+            { name: "Anstead", slug: "anstead", region: "western-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Lake Manchester?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12861,13 +12861,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Toowong",
+        testCentreAddress: "Toowong Transport and Main Roads Customer Service Centre, Level 1, Toowong Village, 9 Sherwood Rd, Toowong QLD 4066",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mount%20Coot-tha%2C%20QLD%2C%20Australia+(Driving%20School%20Mount%20Coot-tha)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Bardon", slug: "bardon", region: "western-brisbane" },
+            { name: "Toowong", slug: "toowong", region: "inner-brisbane" },
+            { name: "Indooroopilly", slug: "indooroopilly", region: "western-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Mount Coot-tha?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12893,13 +12893,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Ipswich",
+        testCentreAddress: "Ipswich Transport and Main Roads Customer Service Centre, 27 Colvin St, North Ipswich QLD 4305",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mount%20Crosby%2C%20QLD%2C%20Australia+(Driving%20School%20Mount%20Crosby)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Karana Downs", slug: "karana-downs", region: "western-brisbane" },
+            { name: "Chuwar", slug: "chuwar", region: "western-brisbane" },
+            { name: "Karalee", slug: "karalee", region: "western-brisbane" }
         ],
         faqs: [
             { question: "Do you pick up from Mount Crosby?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12925,13 +12925,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Creek%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Creek)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Tamborine", slug: "tamborine", region: "logan-city" },
+            { name: "Logan Village", slug: "logan-village", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Cedar Creek?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12957,13 +12957,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Grove%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Grove)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" },
+            { name: "Woodhill", slug: "woodhill", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Cedar Grove?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -12989,13 +12989,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Vale%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Vale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" },
+            { name: "Mundoolun", slug: "mundoolun", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Cedar Vale?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13021,13 +13021,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Flinders%20Lakes%2C%20QLD%2C%20Australia+(Driving%20School%20Flinders%20Lakes)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Flagstone", slug: "flagstone", region: "logan-city" },
+            { name: "Greenbank", slug: "greenbank", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Flinders Lakes?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13053,13 +13053,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Glenlogan%2C%20QLD%2C%20Australia+(Driving%20School%20Glenlogan)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" },
+            { name: "Woodhill", slug: "woodhill", region: "logan-city" },
+            { name: "Cedar Grove", slug: "cedar-grove", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Glenlogan?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13085,13 +13085,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Kagaru%2C%20QLD%2C%20Australia+(Driving%20School%20Kagaru)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Undullah", slug: "undullah", region: "logan-city" },
+            { name: "Cedar Grove", slug: "cedar-grove", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Kagaru?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13117,13 +13117,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Monarch%20Glen%2C%20QLD%2C%20Australia+(Driving%20School%20Monarch%20Glen)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Flagstone", slug: "flagstone", region: "logan-city" },
+            { name: "Greenbank", slug: "greenbank", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Monarch Glen?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13149,13 +13149,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mundoolun%2C%20QLD%2C%20Australia+(Driving%20School%20Mundoolun)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Tamborine", slug: "tamborine", region: "logan-city" },
+            { name: "Cedar Vale", slug: "cedar-vale", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Mundoolun?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13181,13 +13181,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=North%20Maclean%2C%20QLD%2C%20Australia+(Driving%20School%20North%20Maclean)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" },
+            { name: "Greenbank", slug: "greenbank", region: "logan-city" },
+            { name: "Park Ridge South", slug: "park-ridge-south", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from North Maclean?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13213,13 +13213,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Priestdale%2C%20QLD%2C%20Australia+(Driving%20School%20Priestdale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Rochedale South", slug: "rochedale-south", region: "logan-city" },
+            { name: "Springwood", slug: "springwood", region: "logan-city" },
+            { name: "Daisy Hill", slug: "daisy-hill", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Priestdale?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13245,13 +13245,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Silverbark%20Ridge%2C%20QLD%2C%20Australia+(Driving%20School%20Silverbark%20Ridge)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Flagstone", slug: "flagstone", region: "logan-city" },
+            { name: "Greenbank", slug: "greenbank", region: "logan-city" },
+            { name: "South Maclean", slug: "south-maclean", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Silverbark Ridge?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13277,13 +13277,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=South%20Maclean%2C%20QLD%2C%20Australia+(Driving%20School%20South%20Maclean)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "North Maclean", slug: "north-maclean", region: "logan-city" },
+            { name: "Greenbank", slug: "greenbank", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from South Maclean?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13309,13 +13309,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Stockleigh%2C%20QLD%2C%20Australia+(Driving%20School%20Stockleigh)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Logan Village", slug: "logan-village", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" },
+            { name: "Yarrabilba", slug: "yarrabilba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Stockleigh?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13341,13 +13341,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Tamborine%2C%20QLD%2C%20Australia+(Driving%20School%20Tamborine)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Logan Village", slug: "logan-village", region: "logan-city" },
+            { name: "Cedar Creek", slug: "cedar-creek", region: "logan-city" },
+            { name: "Mundoolun", slug: "mundoolun", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Tamborine?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13373,13 +13373,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Veresdale%2C%20QLD%2C%20Australia+(Driving%20School%20Veresdale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Gleneagle", slug: "gleneagle", region: "logan-city" },
+            { name: "Woodhill", slug: "woodhill", region: "logan-city" },
+            { name: "Veresdale Scrub", slug: "veresdale-scrub", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Veresdale?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13405,13 +13405,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Veresdale%20Scrub%2C%20QLD%2C%20Australia+(Driving%20School%20Veresdale%20Scrub)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Veresdale", slug: "veresdale", region: "logan-city" },
+            { name: "Woodhill", slug: "woodhill", region: "logan-city" },
+            { name: "Gleneagle", slug: "gleneagle", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Veresdale Scrub?", answer: "Yes, we offer free pickup and drop-off locally." },
@@ -13437,13 +13437,13 @@ export const suburbSEO: Record<string, SuburbSEO> = {
             "Suburban Intersections — ideal for mastering give-way rules and scanning techniques",
             "Nearby Arterial Roads — structured practice for multi-lane driving and safe merging"
         ],
-        testCentre: "Brisbane TMR",
-        testCentreAddress: "Check the Queensland Government website for your closest testing location.",
+        testCentre: "Logan City",
+        testCentreAddress: "Logan City Transport and Main Roads Customer Service Centre, 43-45 Wembley Rd, Logan Central QLD 4114",
         mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Woodhill%2C%20QLD%2C%20Australia+(Driving%20School%20Woodhill)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
-            { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
-            { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
-            { name: "Spring Hill", slug: "spring-hill", region: "inner-brisbane" }
+            { name: "Cedar Grove", slug: "cedar-grove", region: "logan-city" },
+            { name: "Veresdale", slug: "veresdale", region: "logan-city" },
+            { name: "Jimboomba", slug: "jimboomba", region: "logan-city" }
         ],
         faqs: [
             { question: "Do you pick up from Woodhill?", answer: "Yes, we offer free pickup and drop-off locally." },
