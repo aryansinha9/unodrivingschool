@@ -54,6 +54,27 @@ export default async function SuburbPage({ params }: { params: Params }) {
     const content = suburbContent[suburb];
     const videoId = suburbVideos[suburb] || "AcHQLgvgftc";
 
+    const internalLinks: { name: string; slug: string; region: string }[] = [];
+    if (seo?.nearbySuburbs) {
+        for (const s of seo.nearbySuburbs) {
+            if (internalLinks.length < 5 && s.name !== originalSuburb) {
+                internalLinks.push(s);
+            }
+        }
+    }
+    if (internalLinks.length < 5) {
+        for (const s of regionSuburbs) {
+            if (s !== originalSuburb && !internalLinks.some((n) => n.name === s)) {
+                internalLinks.push({
+                    name: s,
+                    slug: s.toLowerCase().replace(/ /g, "-"),
+                    region,
+                });
+                if (internalLinks.length === 5) break;
+            }
+        }
+    }
+
     // JSON-LD schemas
     const faqSchema = seo ? {
         "@context": "https://schema.org",
@@ -204,29 +225,7 @@ export default async function SuburbPage({ params }: { params: Params }) {
                     </div>
                 </section>
 
-                {/* ── 6. Nearby Suburbs We Service (H2) ──────────────────────── */}
-                <section className="container mx-auto px-6 py-14 max-w-4xl text-center">
-                    <h2 className="font-anton text-3xl uppercase mb-6 text-text-main">
-                        Nearby Suburbs We Service
-                    </h2>
-                    <p className="text-gray-700 mb-8 text-lg">
-                        We also provide professional automatic driving lessons to learners in the following adjacent areas:
-                    </p>
-                    <ul className="flex flex-wrap justify-center gap-4">
-                        {seo.nearbySuburbs.map((s, i) => (
-                            <li key={i}>
-                                <Link
-                                    href={`/locations/${s.region}/${s.slug}`}
-                                    className="inline-block bg-white text-primary font-medium px-6 py-3 rounded-full hover:bg-primary hover:text-white transition-colors border border-gray-200 shadow-sm"
-                                >
-                                    {s.name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-
-                {/* ── 7. Student Testimonials (H2) ───────────────────────────── */}
+                {/* ── 6. Student Testimonials (H2) ───────────────────────────── */}
                 <section className="bg-text-main py-16">
                     <div className="container mx-auto px-6 max-w-6xl">
                         <h2 className="font-anton text-3xl uppercase mb-10 text-white text-center">
@@ -290,6 +289,27 @@ export default async function SuburbPage({ params }: { params: Params }) {
                                 Yes. We offer a dedicated Test Day Package which includes a 1-hour pre-test warm-up lesson and the use of the instructor&apos;s modern, dual-controlled automatic vehicle for your practical test at the {seo.testCentre} TMR centre.
                             </div>
                         </details>
+                    </div>
+                </section>
+
+                {/* ── 8. Nearby Areas We Service (H2) ──────────────────────── */}
+                <section className="bg-background-alt py-16 text-center">
+                    <div className="container mx-auto px-6 max-w-4xl flex flex-col items-center">
+                        <h2 className="font-anton text-3xl uppercase mb-8 text-text-main">
+                            Nearby Areas We Service
+                        </h2>
+                        <ul className="text-left text-lg space-y-3 w-fit">
+                            {internalLinks.map((link, i) => (
+                                <li key={i} className="list-disc ml-6 marker:text-primary">
+                                    <Link
+                                        href={`/locations/${link.region}/${link.slug}`}
+                                        className="text-primary hover:underline hover:text-green-600 font-medium"
+                                    >
+                                        Driving Lessons in {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </section>
             </main>
@@ -365,19 +385,20 @@ export default async function SuburbPage({ params }: { params: Params }) {
             </section>
 
             <section className="bg-background-alt py-12">
-                <div className="container mx-auto px-6">
-                    <h3 className="font-anton text-2xl mb-6 text-center">Nearby Locations</h3>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        {regionSuburbs.filter((s) => s !== originalSuburb).slice(0, 8).map((nearby) => (
-                            <Link
-                                key={nearby}
-                                href={`/locations/${region}/${nearby.toLowerCase().replace(/ /g, "-")}`}
-                                className="text-sm bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md hover:text-primary transition-all"
-                            >
-                                {nearby}
-                            </Link>
+                <div className="container mx-auto px-6 flex flex-col items-center">
+                    <h2 className="font-anton text-2xl mb-6 text-center">Nearby Areas We Service</h2>
+                    <ul className="text-left text-lg space-y-3 w-fit">
+                        {internalLinks.map((link, i) => (
+                            <li key={i} className="list-disc ml-6 marker:text-primary">
+                                <Link
+                                    href={`/locations/${link.region}/${link.slug}`}
+                                    className="text-primary hover:underline hover:text-green-600 font-medium"
+                                >
+                                    Driving Lessons in {link.name}
+                                </Link>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 </div>
             </section>
         </main>
