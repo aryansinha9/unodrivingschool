@@ -195,9 +195,21 @@ export default async function SuburbPage({ params }: { params: Params }) {
                     <div className="bg-white rounded-2xl p-8 border-2 border-primary shadow-sm text-center">
                         <h3 className="font-bold text-2xl mb-2 text-gray-900">{seo.testCentre} Test Centre</h3>
                         <p className="text-gray-600 text-lg mb-6">{seo.testCentreAddress}</p>
-                        <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
                             Our instructors are highly familiar with the specific test routes regularly used by examiners at the {seo.testCentre} centre. We incorporate these exact routes into your practical lessons, ensuring you understand the tricky intersections and speed zones well before exam day, minimizing surprises and maximizing your chance of passing on the first attempt.
                         </p>
+                        <div className="rounded-xl overflow-hidden shadow-inner border border-gray-100 h-64 w-full max-w-2xl mx-auto">
+                            <iframe
+                                src={seo.mapEmbedSrc}
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title={`${seo.testCentre} Driving Test Centre map`}
+                            />
+                        </div>
                     </div>
                 </section>
 
