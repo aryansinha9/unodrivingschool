@@ -12223,7 +12223,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bowen%20Hills%2C%20QLD%2C%20Australia+(Driving%20School%20Bowen%20Hills)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12255,7 +12255,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Brisbane%20City%2C%20QLD%2C%20Australia+(Driving%20School%20Brisbane%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12287,7 +12287,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Petrie%20Terrace%2C%20QLD%2C%20Australia+(Driving%20School%20Petrie%20Terrace)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12319,7 +12319,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Spring%20Hill%2C%20QLD%2C%20Australia+(Driving%20School%20Spring%20Hill)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12351,7 +12351,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bald%20Hills%2C%20QLD%2C%20Australia+(Driving%20School%20Bald%20Hills)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12383,7 +12383,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Bracken%20Ridge%2C%20QLD%2C%20Australia+(Driving%20School%20Bracken%20Ridge)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12415,7 +12415,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Gaythorne%2C%20QLD%2C%20Australia+(Driving%20School%20Gaythorne)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12447,7 +12447,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Kalinga%2C%20QLD%2C%20Australia+(Driving%20School%20Kalinga)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12479,7 +12479,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Northgate%2C%20QLD%2C%20Australia+(Driving%20School%20Northgate)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12511,7 +12511,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Nudgee%20Beach%2C%20QLD%2C%20Australia+(Driving%20School%20Nudgee%20Beach)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12543,7 +12543,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Strathpine%2C%20QLD%2C%20Australia+(Driving%20School%20Strathpine)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12575,7 +12575,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Archerfield%2C%20QLD%2C%20Australia+(Driving%20School%20Archerfield)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12607,7 +12607,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Larapinta%2C%20QLD%2C%20Australia+(Driving%20School%20Larapinta)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12639,7 +12639,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Logan%20City%2C%20QLD%2C%20Australia+(Driving%20School%20Logan%20City)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12671,7 +12671,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Nathan%2C%20QLD%2C%20Australia+(Driving%20School%20Nathan)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12703,7 +12703,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Sumner%2C%20QLD%2C%20Australia+(Driving%20School%20Sumner)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12735,7 +12735,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Chandler%2C%20QLD%2C%20Australia+(Driving%20School%20Chandler)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12767,7 +12767,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBardon%20QLD%204065!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12799,7 +12799,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Enoggera%20Reservoir%2C%20QLD%2C%20Australia+(Driving%20School%20Enoggera%20Reservoir)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12831,7 +12831,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Lake%20Manchester%2C%20QLD%2C%20Australia+(Driving%20School%20Lake%20Manchester)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12863,7 +12863,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mount%20Coot-tha%2C%20QLD%2C%20Australia+(Driving%20School%20Mount%20Coot-tha)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12895,7 +12895,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mount%20Crosby%2C%20QLD%2C%20Australia+(Driving%20School%20Mount%20Crosby)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12927,7 +12927,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Creek%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Creek)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12959,7 +12959,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Grove%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Grove)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -12991,7 +12991,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Cedar%20Vale%2C%20QLD%2C%20Australia+(Driving%20School%20Cedar%20Vale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13023,7 +13023,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Flinders%20Lakes%2C%20QLD%2C%20Australia+(Driving%20School%20Flinders%20Lakes)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13055,7 +13055,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Glenlogan%2C%20QLD%2C%20Australia+(Driving%20School%20Glenlogan)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13087,7 +13087,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Kagaru%2C%20QLD%2C%20Australia+(Driving%20School%20Kagaru)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13119,7 +13119,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Monarch%20Glen%2C%20QLD%2C%20Australia+(Driving%20School%20Monarch%20Glen)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13151,7 +13151,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Mundoolun%2C%20QLD%2C%20Australia+(Driving%20School%20Mundoolun)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13183,7 +13183,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=North%20Maclean%2C%20QLD%2C%20Australia+(Driving%20School%20North%20Maclean)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13215,7 +13215,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Priestdale%2C%20QLD%2C%20Australia+(Driving%20School%20Priestdale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13247,7 +13247,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Silverbark%20Ridge%2C%20QLD%2C%20Australia+(Driving%20School%20Silverbark%20Ridge)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13279,7 +13279,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=South%20Maclean%2C%20QLD%2C%20Australia+(Driving%20School%20South%20Maclean)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13311,7 +13311,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Stockleigh%2C%20QLD%2C%20Australia+(Driving%20School%20Stockleigh)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13343,7 +13343,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Tamborine%2C%20QLD%2C%20Australia+(Driving%20School%20Tamborine)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13375,7 +13375,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Veresdale%2C%20QLD%2C%20Australia+(Driving%20School%20Veresdale)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13407,7 +13407,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Veresdale%20Scrub%2C%20QLD%2C%20Australia+(Driving%20School%20Veresdale%20Scrub)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
@@ -13439,7 +13439,7 @@ export const suburbSEO: Record<string, SuburbSEO> = {
         ],
         testCentre: "Brisbane TMR",
         testCentreAddress: "Check the Queensland Government website for your closest testing location.",
-        mapEmbedSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.067451368912!2d153.021072!3d-27.4697707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045262a4d1%3A0xe1db040ba9bc2a13!2sBrisbane%20City%20QLD%204000!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau",
+        mapEmbedSrc: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Woodhill%2C%20QLD%2C%20Australia+(Driving%20School%20Woodhill)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
         nearbySuburbs: [
             { name: "Brisbane City", slug: "brisbane-city", region: "inner-brisbane" },
             { name: "Fortitude Valley", slug: "fortitude-valley", region: "inner-brisbane" },
