@@ -33,7 +33,7 @@ export default function RegionAccordion({ locationsData }: { locationsData: Loca
                         </button>
 
                         <div
-                            className={`transition-all duration-500 ease-in-out ${isOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+                            className={`transition-all duration-500 ease-in-out ${isOpen ? "max-h-[350px] opacity-100 overflow-y-auto" : "max-h-0 opacity-0 overflow-hidden"
                                 }`}
                         >
                             <ul className="p-6 grid grid-cols-2 sm:grid-cols-2 gap-3 bg-white">
