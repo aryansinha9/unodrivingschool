@@ -6,16 +6,18 @@ import Link from "next/link";
 type LocationsData = Record<string, string[]>;
 
 export default function RegionAccordion({ locationsData }: { locationsData: LocationsData }) {
-    const [openRegion, setOpenRegion] = useState<string | null>(null);
+    const [openRegions, setOpenRegions] = useState<string[]>([]);
 
     const toggleRegion = (region: string) => {
-        setOpenRegion(openRegion === region ? null : region);
+        setOpenRegions((prev) =>
+            prev.includes(region) ? prev.filter((r) => r !== region) : [...prev, region]
+        );
     };
 
     return (
-        <div className="grid md:grid-cols-2 gap-6 w-full max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 items-start gap-6 w-full max-w-5xl mx-auto">
             {Object.entries(locationsData).map(([region, suburbs]) => {
-                const isOpen = openRegion === region;
+                const isOpen = openRegions.includes(region);
 
                 return (
                     <div key={region} className="bg-white border rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
