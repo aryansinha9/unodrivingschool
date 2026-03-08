@@ -93,18 +93,30 @@ export default async function SuburbPage({ params }: { params: Params }) {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "DrivingSchool",
-        name: "UNO Driving School",
-        description: `Automatic driving lessons in ${originalSuburb} and surrounding suburbs.`,
-        areaServed: originalSuburb,
-        url: `https://www.unodrivingschool.com.au/locations/${region}/${suburb}`,
-        telephone: "1300 000 000",
-        priceRange: "$$",
-        aggregateRating: { "@type": "AggregateRating", ratingValue: "5", reviewCount: "200" },
+        name: `UNO Driving School ${originalSuburb}`,
+        url: `https://www.unodrivingschool.com.au/locations/${region}/${suburb}/`,
+        telephone: "0456 860 714",
+        email: "hello@unodrivingschool.com.au",
+        image: "https://www.unodrivingschool.com.au/wp-content/uploads/logo-url-here.png",
         address: {
             "@type": "PostalAddress",
-            addressLocality: "Brisbane",
+            streetAddress: "Suite 128, 42 Manilla Street",
+            addressLocality: "East Brisbane",
             addressRegion: "QLD",
+            postalCode: "4169",
             addressCountry: "AU",
+        },
+        areaServed: {
+            "@type": "Place",
+            name: originalSuburb,
+        },
+        makesOffer: {
+            "@type": "Offer",
+            itemOffered: {
+                "@type": "Service",
+                name: `Driving Lessons in ${originalSuburb}`,
+                description: `Professional automatic driving lessons, test preparation, and logbook hours in ${originalSuburb}.`,
+            },
         },
     };
 
