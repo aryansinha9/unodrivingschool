@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 import { locations } from "@/app/data/locations";
+import RegionAccordion from "./RegionAccordion";
 
 export default function Locations() {
     return (
@@ -64,22 +65,10 @@ export default function Locations() {
                 </div>
             </section>
 
-            {/* Regions Grid */}
+            {/* Regions Grid (Now Interactive) */}
             <section className="container mx-auto px-6 py-16">
                 <h2 className="font-anton text-3xl text-center mb-12">Locations We Teach</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {Object.keys(locations).map((region) => (
-                        <Link key={region} href={`/locations/${region}`} className="group">
-                            <div className="bg-white border p-8 rounded-2xl hover:shadow-xl transition-all hover:border-primary text-center h-full flex flex-col items-center justify-center relative overflow-hidden">
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-primary transition-colors"></div>
-                                <h3 className="font-anton text-2xl capitalize group-hover:text-primary transition-colors mb-2">
-                                    {region.replace("-", " ")}
-                                </h3>
-                                <p className="text-gray-500 text-sm">View Suburbs &rarr;</p>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
+                <RegionAccordion locationsData={locations} />
             </section>
 
             {/* "We Come To You" CTA */}
