@@ -1,6 +1,41 @@
+"use client";
+
+import { useState } from "react";
 import PageHeader from "@/app/components/PageHeader";
 
 export default function Careers() {
+    const [status, setStatus] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setStatus("");
+
+        const formData = new FormData(e.currentTarget);
+        formData.append("access_key", "c8c85d06-14cb-4a7c-9e0f-e9235ae15df7");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setStatus("Application sent successfully!");
+                (e.target as HTMLFormElement).reset();
+            } else {
+                setStatus("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            setStatus("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <main className="min-h-screen">
             <PageHeader title="DRIVER INSTRUCTOR JOBS" />
@@ -55,26 +90,28 @@ export default function Careers() {
                         </div>
 
                         <h3 className="font-anton text-2xl mb-6 text-text-main uppercase">Apply Now</h3>
-                        <form className="space-y-4">
+                        <form className="space-y-4" onSubmit={handleSubmit}>
+                            <input type="hidden" name="subject" value="New Career Application" />
                             <div>
                                 <label className="block text-gray-700 font-bold mb-2">Name</label>
-                                <input type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Name" />
+                                <input type="text" name="name" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Name" />
                             </div>
                             <div>
                                 <label className="block text-gray-700 font-bold mb-2">Email</label>
-                                <input type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Email" />
+                                <input type="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Email" />
                             </div>
                             <div>
                                 <label className="block text-gray-700 font-bold mb-2">Phone Number</label>
-                                <input type="tel" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Phone Number" />
+                                <input type="tel" name="phone" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Phone Number" />
                             </div>
                             <div>
                                 <label className="block text-gray-700 font-bold mb-2">Message</label>
-                                <textarea className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors h-32" placeholder="Message"></textarea>
+                                <textarea name="message" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors h-32" placeholder="Message"></textarea>
                             </div>
-                            <button type="submit" className="bg-primary text-white font-anton uppercase text-xl px-12 py-3 rounded-full hover:bg-green-600 transition-colors w-full md:w-auto shadow-md">
-                                Send
+                            <button type="submit" disabled={isSubmitting} className="bg-primary text-white font-anton uppercase text-xl px-12 py-3 rounded-full hover:bg-green-600 transition-colors w-full md:w-auto shadow-md disabled:opacity-50">
+                                {isSubmitting ? "Sending..." : "Send"}
                             </button>
+                            {status && <p className={`mt-4 font-bold ${status.includes("success") ? "text-green-600" : "text-red-600"}`}>{status}</p>}
                         </form>
                     </div>
                 </div>
