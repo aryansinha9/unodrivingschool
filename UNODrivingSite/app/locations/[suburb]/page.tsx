@@ -6,6 +6,7 @@ import { suburbContent } from "@/app/data/suburb-content";
 import { suburbVideos } from "@/app/data/suburb-videos";
 import { suburbSEO } from "@/app/data/suburb-seo";
 import VideoPlayer from "@/app/components/VideoPlayer";
+import Image from "next/image";
 
 type Params = Promise<{ suburb: string }>;
 
@@ -67,6 +68,11 @@ export default async function SuburbPage({ params }: { params: Params }) {
     const seo = suburbSEO[suburb];
     const content = suburbContent[suburb];
     const videoId = suburbVideos[suburb] || "AcHQLgvgftc";
+
+    // ── Get Deterministic Image ───────────────────────────────────
+    const allSuburbsList = Object.values(locations).flat().sort();
+    const suburbIndex = allSuburbsList.indexOf(originalSuburb);
+    const imageNumber = (suburbIndex === -1) ? 1 : (suburbIndex % 11) + 1;
 
     const internalLinks: { name: string; slug: string; region: string }[] = [];
     if (seo?.nearbySuburbs) {
@@ -202,6 +208,19 @@ export default async function SuburbPage({ params }: { params: Params }) {
                     <p className="text-gray-700 text-lg leading-relaxed">
                         Learning to drive in {originalSuburb}? UNO Driving School offers professional automatic driving lessons tailored to your skill level. Our patient instructors focus on building safe, confident drivers, helping students pass their Queensland driving test on the first go.
                     </p>
+                </section>
+
+                {/* ── Passing Student Image ─────────────────────────────────── */}
+                <section className="container mx-auto px-6 pb-12 max-w-4xl flex justify-center">
+                    <div className="relative w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                        <Image
+                            src={`/photo${imageNumber}.jpg`}
+                            alt={`Pass student at UNO Driving School in ${originalSuburb}`}
+                            width={1200}
+                            height={800}
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
                 </section>
 
                 {/* ── 3. Local Roads and Driving Conditions (H2) ─────────────── */}
@@ -443,6 +462,19 @@ export default async function SuburbPage({ params }: { params: Params }) {
                         />
                     </div>
                 )}
+            </section>
+
+            {/* ── Passing Student Image ─────────────────────────────────── */}
+            <section className="container mx-auto px-6 pb-12 max-w-4xl flex justify-center">
+                <div className="relative w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                    <Image
+                        src={`/photo${imageNumber}.jpg`}
+                        alt={`Pass student at UNO Driving School in ${originalSuburb}`}
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-cover"
+                    />
+                </div>
             </section>
 
             <section className="bg-background-alt py-12">
