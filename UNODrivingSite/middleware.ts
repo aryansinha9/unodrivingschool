@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createServerClient } from "@supabase/ssr";
 
 // Maps suburb slugs to their region for redirect purposes
 // This handles the /driving-lessons-[suburb] → /locations/[region]/[suburb] redirect
@@ -101,7 +102,7 @@ const suburbRegionMap: Record<string, string> = {
     "yarrabilba": "logan-city",
 };
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
     // Handle /driving-lessons-[suburb] → /locations/[suburb]
@@ -114,9 +115,56 @@ export function middleware(request: NextRequest) {
         );
     }
 
-    return NextResponse.next();
+    // SUPABASE SESSION MANAGEMENT & ADMIN ROUTING
+    let supabaseResponse = NextResponse.next({ request });
+
+    // 1. Refresh session
+    const supabase = createServerClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        {
+            cookies: {
+                getAll() { return request.cookies.getAll() },
+                setAll(cookiesToSet) {
+                    cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
+                    supabaseResponse = NextResponse.next({ request })
+                    cookiesToSet.forEach(({ name, value, options }) =>
+                        supabaseResponse.cookies.set(name, value, options)
+                    )
+                },
+            },
+        }
+    );
+
+    // Get User Auth
+    const { data: { user } } = await supabase.auth.getUser();
+
+    // Route Protection
+    if (pathname.startsWith("/admin")) {
+        // If an authenticated user tries to go to login, send to dashboard
+        if (user && pathname === "/admin/login") {
+            return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+        }
+        
+        // If unauthenticated user tries to go anywhere else in admin, send to login
+        if (!user && pathname !== "/admin/login") {
+            return NextResponse.redirect(new URL("/admin/login", request.url));
+        }
+
+        // If they just go to /admin root, auto-redirect
+        if (pathname === "/admin") {
+            if (user) return NextResponse.redirect(new URL("/admin/dashboard", request.url));
+            else return NextResponse.redirect(new URL("/admin/login", request.url));
+        }
+    }
+
+    return supabaseResponse;
 }
 
 export const config = {
-    matcher: "/driving-lessons-:path*",
+    matcher: [
+        "/driving-lessons-:path*", 
+        "/admin/:path*",
+        "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)"
+    ],
 };

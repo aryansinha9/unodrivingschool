@@ -81,7 +81,7 @@ export default function Careers() {
                             <div>
                                 <h4 className="font-bold text-lg mb-2">Phone</h4>
 
-                                <p>0456860714</p>
+                                <p>(07) 3435 1575</p>
                             </div>
                             <div className="md:col-span-2">
                                 <h4 className="font-bold text-lg mb-2">Email</h4>

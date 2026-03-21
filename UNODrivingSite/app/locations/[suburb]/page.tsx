@@ -7,6 +7,10 @@ import { suburbVideos } from "@/app/data/suburb-videos";
 import { suburbSEO } from "@/app/data/suburb-seo";
 import VideoPlayer from "@/app/components/VideoPlayer";
 import Image from "next/image";
+import { localVideoMap } from "@/app/data/suburb-local-videos";
+import LocalVideoSection from "@/app/components/LocalVideoSection";
+import SuburbMapSection from "@/app/components/SuburbMapSection";
+import { getTestCentreObject } from "@/app/data/test-centres";
 
 type Params = Promise<{ suburb: string }>;
 
@@ -69,6 +73,9 @@ export default async function SuburbPage({ params }: { params: Params }) {
     const content = suburbContent[suburb];
     const videoId = suburbVideos[suburb] || "AcHQLgvgftc";
 
+    const tcData = getTestCentreObject(suburb);
+    const testCentreUrl = tcData.mapUrl;
+
     // ── Get Deterministic Image ───────────────────────────────────
     const allSuburbsList = Object.values(locations).flat().sort();
     const suburbIndex = allSuburbsList.indexOf(originalSuburb);
@@ -102,7 +109,7 @@ export default async function SuburbPage({ params }: { params: Params }) {
         mainEntity: [
             { question: `Do you pick up from ${originalSuburb}?`, answer: `Yes, we offer free pickup and drop-off from your home, school, or workplace in ${originalSuburb} and surrounding areas.` },
             { question: `How much are lessons in ${originalSuburb}?`, answer: `Our driving lessons in ${originalSuburb} are highly affordable. A standard 1-hour lesson is $75, or you can purchase a 10-hour package for $700.` },
-            { question: `Can I use the instructor's car for the test at ${seo.testCentre}?`, answer: `Yes. We offer a dedicated Test Day Package which includes a 1-hour pre-test warm-up lesson and the use of the instructor's modern, dual-controlled automatic vehicle for your practical test at the ${seo.testCentre} TMR centre.` }
+            { question: `Can I use the instructor's car for the test at ${tcData.name}?`, answer: `Yes. We offer a dedicated Test Day Package which includes a 1-hour pre-test warm-up lesson and the use of the instructor's modern, dual-controlled automatic vehicle for your practical test at the ${tcData.name}.` }
         ].map((faq) => ({
             "@type": "Question",
             name: faq.question,
@@ -115,7 +122,7 @@ export default async function SuburbPage({ params }: { params: Params }) {
         "@type": "DrivingSchool",
         name: `UNO Driving School ${originalSuburb}`,
         url: `https://www.unodrivingschool.com.au/locations/${suburb}/`,
-        telephone: "0456 860 714",
+        telephone: "(07) 3435 1575",
         email: "hello@unodrivingschool.com.au",
         image: "https://www.unodrivingschool.com.au/wp-content/uploads/logo-url-here.png",
         address: {
@@ -253,27 +260,35 @@ export default async function SuburbPage({ params }: { params: Params }) {
                     </div>
                 </section>
 
+                {/* ── Local Video Section ────────────────────── */}
+                {localVideoMap[suburb] && (
+                    <LocalVideoSection 
+                        videoId={localVideoMap[suburb]} 
+                        suburbName={originalSuburb} 
+                    />
+                )}
+
                 {/* ── 4. Driving Test Centre (H2) ────────────────────────────── */}
                 <section className="container mx-auto px-6 py-14 max-w-4xl">
                     <h2 className="font-anton text-3xl uppercase mb-6 text-text-main text-center">
                         Driving Test Centre for {originalSuburb}
                     </h2>
                     <div className="bg-white rounded-2xl p-8 border-2 border-primary shadow-sm text-center">
-                        <h3 className="font-bold text-2xl mb-2 text-gray-900">{seo.testCentre} Test Centre</h3>
-                        <p className="text-gray-600 text-lg mb-6">{seo.testCentreAddress}</p>
+                        <h3 className="font-bold text-2xl mb-2 text-gray-900">{tcData.name}</h3>
+                        <p className="text-gray-600 text-lg mb-6">{tcData.address}</p>
                         <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
-                            Our instructors are highly familiar with the specific test routes regularly used by examiners at the {seo.testCentre} centre. We incorporate these exact routes into your practical lessons, ensuring you understand the tricky intersections and speed zones well before exam day, minimizing surprises and maximizing your chance of passing on the first attempt.
+                            Our instructors are highly familiar with the specific test routes regularly used by examiners at the {tcData.name}. We incorporate these exact routes into your practical lessons, ensuring you understand the tricky intersections and speed zones well before exam day, minimizing surprises and maximizing your chance of passing on the first attempt.
                         </p>
-                        <div className="rounded-xl overflow-hidden shadow-inner border border-gray-100 h-64 w-full max-w-2xl mx-auto">
+                        <div className="rounded-xl overflow-hidden shadow-inner border border-gray-100 w-full max-w-2xl mx-auto">
                             <iframe
-                                src={seo.mapEmbedSrc}
+                                src={testCentreUrl}
                                 width="100%"
-                                height="100%"
+                                height="450"
                                 style={{ border: 0 }}
-                                allowFullScreen
+                                allowFullScreen={false}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title={`${seo.testCentre} Driving Test Centre map`}
+                                title={`Driving Test Centre for ${originalSuburb}`}
                             />
                         </div>
                     </div>
@@ -369,6 +384,9 @@ export default async function SuburbPage({ params }: { params: Params }) {
                         </details>
                     </div>
                 </section>
+
+                {/* ── Suburb Location Map ──────────────────────────────────────── */}
+                <SuburbMapSection suburbName={originalSuburb} />
 
                 {/* ── 8. Nearby Areas We Service (H2) ──────────────────────── */}
                 <section className="bg-background-alt py-16 text-center">

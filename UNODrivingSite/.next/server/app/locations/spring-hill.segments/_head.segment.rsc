@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[32605,["/_next/static/chunks/e3beb054d106c9f2.js","/_next/static/chunks/a4ef6989f00136fa.js"],"ViewportBoundary"]
-3:I[32605,["/_next/static/chunks/e3beb054d106c9f2.js","/_next/static/chunks/a4ef6989f00136fa.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[83288,["/_next/static/chunks/e3beb054d106c9f2.js","/_next/static/chunks/a4ef6989f00136fa.js"],"IconMark"]
-0:{"buildId":"fUahZOWGofsW2KLZv7YLO","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Driving Lessons Spring Hill | UNO Driving School"}],["$","meta","1",{"name":"description","content":"Professional driving lessons in Spring Hill. Master local road rules, parking, and test preparation with Brisbane's highly rated driving instructors. Book your lesson today."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.cb8759fb.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}

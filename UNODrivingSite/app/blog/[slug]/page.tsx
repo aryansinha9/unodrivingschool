@@ -1,48 +1,113 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import PageHeader from "@/app/components/PageHeader";
-import { blogPosts } from "@/app/data/blog-posts";
+import { Metadata } from "next";
+import { createClient } from "@/lib/supabase/server";
 
-// Define params type for Next.js 15/14
-type Params = Promise<{ slug: string }>;
+export const dynamic = 'force-dynamic';
 
-export async function generateStaticParams() {
-    return blogPosts.map((post) => ({
-        slug: post.slug,
-    }));
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const supabase = await createClient();
+    
+    const { data: post, error } = await supabase
+        .from('posts')
+        .select('title, content')
+        .eq('slug', slug)
+        .eq('published', true)
+        .single();
+    
+    if (error || !post) return { title: 'Not Found | UNO Driving School' };
+
+    let metaDesc = `Read ${post.title} by UNO Driving School`;
+    if (Array.isArray(post.content)) {
+        const firstParagraph = post.content.find((b: any) => b.type === 'paragraph');
+        if (firstParagraph) metaDesc = firstParagraph.text.substring(0, 160) + '...';
+    }
+
+    return {
+        title: `${post.title} | UNO Driving School Blog`,
+        description: metaDesc,
+    };
 }
 
-export default async function BlogPostPage({ params }: { params: Params }) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const post = blogPosts.find((p) => p.slug === slug);
 
-    if (!post) {
+    // Validate slug format before hitting the database
+    if (!/^[a-z0-9-]+$/.test(slug)) {
         notFound();
     }
 
-    return (
-        <main className="min-h-screen">
-            <PageHeader
-                title={post.title} // Title might be long, PageHeader handles wrapping
-                subtitle={`${post.date} • ${post.category}`}
-            />
+    const supabase = await createClient();
 
-            <article className="container mx-auto px-6 py-12 max-w-4xl">
-                {/* Back Link */}
-                <div className="mb-8">
-                    <Link href="/blog" className="text-primary hover:underline flex items-center gap-2 font-medium">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
-                        Back to Blog
-                    </Link>
+    const { data: post, error } = await supabase
+        .from('posts')
+        .select('id, title, date, slug, blog_type, cover_image_url, content, published')
+        .eq('slug', slug)
+        .eq('published', true)
+        .single();
+
+    if (error || !post) {
+        notFound();
+    }
+
+    // Helper to render the JSONB block array back into exact native HTML matching the legacy
+    const renderContentBlock = (block: any, i: number) => {
+        if (block.type === 'subheading') {
+            return (
+                <h3 key={i} className="font-bold text-2xl text-gray-900 mt-10 mb-4 uppercase tracking-wide">
+                    {block.text}
+                </h3>
+            );
+        } else if (block.type === 'paragraph') {
+            return (
+                <p key={i} className="text-gray-700 leading-relaxed mb-6">
+                    {block.text}
+                </p>
+            );
+        } else if (block.type === 'image') {
+            return (
+                <div key={i} className="my-8">
+                    <img src={block.url} alt={block.alt || 'Blog Image'} className="w-full h-auto rounded-xl shadow-sm border border-gray-100 object-cover" />
                 </div>
-                {/* Featured Image */}
-                {post.imageUrl && (
-                    <div className="relative w-full h-[400px] mb-8 rounded-xl overflow-hidden">
+            );
+        }
+        return null;
+    };
+
+    return (
+        <main className="min-h-screen bg-gray-50 pb-20">
+            {/* ── 1. Header / Hero ─────────────────────────────────────────── */}
+            <div className="bg-background-alt border-b border-gray-200 py-16">
+                <div className="container mx-auto px-6 max-w-4xl">
+                    <div className="flex justify-center items-center gap-2 text-sm text-gray-500 mb-6 tracking-wide">
+                        <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                        <span>&rsaquo;</span>
+                        <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+                        <span>&rsaquo;</span>
+                        <span className="text-gray-900 font-medium line-clamp-1">{post.title}</span>
+                    </div>
+
+                    <div className="flex flex-col items-center text-center mb-8">
+                        <h1 className="font-anton text-4xl md:text-5xl lg:text-6xl text-text-main uppercase leading-tight mb-6">
+                            {post.title}
+                        </h1>
+                        <div className="inline-flex items-center gap-2 text-sm text-gray-500 bg-gray-50 px-4 py-1.5 rounded-full border border-gray-200">
+                            <span className="text-primary font-bold uppercase tracking-widest text-xs">{post.blog_type}</span>
+                            <span>•</span>
+                            <span className="font-medium">{post.date}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* ── 2. Content ─────────────────────────────────────────────── */}
+            <div className="container mx-auto px-6 max-w-4xl -mt-8">
+                {post.cover_image_url && (
+                    <div className="w-full relative aspect-[2/1] md:aspect-[2.5/1] rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-12 bg-gray-100">
                         <Image
-                            src={post.imageUrl}
+                            src={post.cover_image_url}
                             alt={post.title}
                             fill
                             className="object-cover"
@@ -51,45 +116,21 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                     </div>
                 )}
 
-                {/* Content */}
-                <div className="prose prose-lg max-w-none">
-                    {post.content.map((paragraph, index) => {
-                        // Simple check for headings
-                        if (paragraph.startsWith("### ")) {
-                            return (
-                                <h3 key={index} className="text-2xl font-anton mt-8 mb-4 text-gray-900">
-                                    {paragraph.replace("### ", "")}
-                                </h3>
-                            );
-                        }
-                        return (
-                            <p key={index} className="mb-6 text-gray-700 leading-relaxed">
-                                {paragraph}
-                            </p>
-                        );
-                    })}
-                </div>
-
-                {/* Sidebar / Recent Posts Section (Simulated based on design request) */}
-                <div className="mt-16 pt-8 border-t">
-                    <h3 className="font-anton text-2xl mb-6">Recent Posts</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {blogPosts
-                            .filter((p) => p.id !== post.id)
-                            .slice(0, 2)
-                            .map((recentPost) => (
-                                <Link
-                                    key={recentPost.id}
-                                    href={`/blog/${recentPost.slug}`}
-                                    className="group block p-4 border rounded-lg hover:border-primary transition-colors"
-                                >
-                                    <h4 className="font-bold group-hover:text-primary transition-colors mb-2">{recentPost.title}</h4>
-                                    <span className="text-sm text-gray-500">{recentPost.date}</span>
-                                </Link>
-                            ))}
-                    </div>
-                </div>
-            </article>
+                <article className="prose prose-lg max-w-none text-gray-700 prose-headings:font-anton prose-headings:font-normal prose-headings:uppercase prose-headings:text-text-main prose-a:text-primary prose-a:font-bold prose-img:rounded-xl">
+                    {Array.isArray(post.content) && (() => {
+                        let coverSkipped = false;
+                        return post.content.map((block: any, i: number) => {
+                            // Skip the first image block that matches cover_image_url
+                            // since it's already displayed as the hero above
+                            if (!coverSkipped && block.type === 'image' && block.url === post.cover_image_url) {
+                                coverSkipped = true;
+                                return null;
+                            }
+                            return renderContentBlock(block, i);
+                        });
+                    })()}
+                </article>
+            </div>
         </main>
     );
 }

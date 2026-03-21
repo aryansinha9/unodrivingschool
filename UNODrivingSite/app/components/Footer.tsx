@@ -14,7 +14,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <span className="font-bold text-white">Call:</span>
                                 <div>
-                                    <a href="tel:0456860714" className="hover:text-primary transition-colors block">0456 860 714</a>
+                                    <a href="tel:0734351575" className="hover:text-primary transition-colors block">(07) 3435 1575</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -114,10 +114,18 @@ export default function Footer() {
                     {/* pb-10 puts space between Component and Bottom */}
                     <div className="flex flex-col items-center gap-10 pb-10">
 
-                        {/* Copyright */}
-                        <p className="text-gray-500 text-sm text-center">
-                            &copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.
-                        </p>
+                        {/* Copyright + Admin Login */}
+                        <div className="flex items-center justify-center gap-6 flex-wrap">
+                            <p className="text-gray-500 text-sm text-center">
+                                &copy; {new Date().getFullYear()} UNO Driving School. All rights reserved.
+                            </p>
+                            <Link
+                                href="/admin/login"
+                                className="text-gray-600 text-xs hover:text-primary transition-colors border border-gray-700 rounded px-3 py-1"
+                            >
+                                Admin Login
+                            </Link>
+                        </div>
 
                         {/* ShapeBlur Animation */}
                         <div className="w-full h-24 relative opacity-30 overflow-hidden rounded-lg">

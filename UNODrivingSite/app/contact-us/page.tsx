@@ -11,11 +11,16 @@ export default function ContactUs() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        // Honeypot check — if filled, silently reject (bot detected)
+        const honey = (e.currentTarget.elements.namedItem('_honey') as HTMLInputElement)?.value;
+        if (honey) return;
+
         setIsSubmitting(true);
         setStatus("");
 
         const formData = new FormData(e.currentTarget);
-        formData.append("access_key", "c8c85d06-14cb-4a7c-9e0f-e9235ae15df7");
+        formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -50,7 +55,7 @@ export default function ContactUs() {
                         <h2 className="font-anton text-3xl mb-6">Get In Touch</h2>
                         <div className="space-y-4">
                             <p><strong>Address:</strong> Suite 128, 42 Manilla Street East Brisbane Queensland 4169</p>
-                            <p><strong>Phone:</strong> 0456 860 714</p>
+                            <p><strong>Phone:</strong> (07) 3435 1575</p>
                             <p><strong>Email:</strong> hello@unodrivingschool.com.au</p>
                         </div>
 
@@ -74,6 +79,15 @@ export default function ContactUs() {
 
                     </div>
                     <form className="space-y-4" onSubmit={handleSubmit}>
+                        {/* Honeypot field — hidden from real users, filled by bots */}
+                        <input
+                            type="text"
+                            name="_honey"
+                            style={{ display: 'none' }}
+                            tabIndex={-1}
+                            aria-hidden="true"
+                            autoComplete="off"
+                        />
                         <input type="hidden" name="subject" value="New Contact Inquiry" />
                         <input type="text" name="name" placeholder="Name" required className="w-full border p-3 rounded" />
                         <input type="email" name="email" placeholder="Email" required className="w-full border p-3 rounded" />
