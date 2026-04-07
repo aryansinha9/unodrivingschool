@@ -23,7 +23,7 @@ export default function InstructorPage() {
                                 src="/Peter-Hooper.JPG"
                                 alt="Peter Hooper - Driving Instructor"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                                 sizes="(max-width: 768px) 100vw, 320px"
                                 priority
                             />
@@ -65,7 +65,7 @@ export default function InstructorPage() {
 
                         <div className="space-y-6 font-roboto text-gray-700 leading-relaxed text-lg mb-10">
                             <p>
-                                Peter Hooper is a highly experienced driving instructor in Brisbane and the founder of MyLife Driving School, 
+                                Peter Hooper is a highly experienced driving instructor in Brisbane and the founder of UNO Driving School, 
                                 with over 20 years of professional experience helping learners become safe and confident drivers.
                             </p>
                             <p>
@@ -92,10 +92,10 @@ export default function InstructorPage() {
                         </div>
 
                         <div className="bg-background-alt p-6 rounded-xl border border-gray-200">
-                            <p className="font-roboto font-medium text-gray-800 text-lg mb-4 flex items-start gap-4 shadow-sm">
+                            <p className="font-roboto font-medium text-gray-800 text-lg mb-4 flex items-start gap-4">
                                 <span className="text-2xl">👉</span>
                                 <span>
-                                    If you&apos;re looking for a trusted Brisbane driving instructor who puts your progress first, contact MyLife Driving 
+                                    If you&apos;re looking for a trusted Brisbane driving instructor who puts your progress first, contact UNO Driving 
                                     School today and start your journey towards safe and confident driving.
                                 </span>
                             </p>
