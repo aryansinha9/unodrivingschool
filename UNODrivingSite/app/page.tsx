@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
           {/* Right side visual */}
-          <div className="relative h-[500px] lg:h-[600px] flex items-center justify-center">
+          <div className="relative h-[550px] lg:h-[700px] w-full flex items-center justify-center -mt-8 lg:-mt-12">
             {/* Play Button Overlay */}
             <button
               onClick={() => setIsHeroVideoOpen(true)}
@@ -73,11 +73,12 @@ export default function Home() {
               </svg>
             </button>
 
+            {/* Main Visual Image - Uses tailwind scaling and translation. Adjust scale-[X.XX] to change size. Adjust -translate-x-[Xpx] or translate-y-[Xpx] to move it */}
             <Image
-              src="/learn-to-drive.png"
+              src="/learn-to-drive1.png"
               alt="Learn to Drive with UNO"
               fill
-              className="object-contain"
+              className="object-contain scale-[1.3] lg:scale-[1.3] translate-x-2 lg:translate-x-6"
               priority
             />
             <div className="absolute bottom-4 lg:bottom-12 left-0 right-0 z-10 text-center pointer-events-none">
