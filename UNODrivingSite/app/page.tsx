@@ -41,8 +41,8 @@ export default function Home() {
               <span className="text-primary">TODAY!</span>
             </h1>
             <p className="font-roboto-slab text-lg text-gray-600 max-w-xl leading-relaxed">
-              Learning to drive? Need Driving Lessons? Tired of wasting endless money on Uber? Need to fill your learner log book hours up fast?
-              Let’s start your engines and get your independence. Uno Driving School offers holistic affordable driving lessons and is the go-to driving school near you.
+              Learning to Drive in Brisbane or the Gold Coast? Need driving lessons? Tired of spending endless money on Uber? Want to fill your learner logbook hours quickly?
+              Let’s start your engines and gain your independence! Uno Driving School offers affordable, comprehensive driving lessons and is the go-to driving school near you.
             </p>
 
             <div className="space-y-4">
