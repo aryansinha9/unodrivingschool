@@ -25,6 +25,9 @@ export default function AdminLayout({
           <Link href="/admin/blog" className="block px-4 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors font-medium">
             Blog Posts
           </Link>
+          <Link href="/admin/page-content" className="block px-4 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors font-medium">
+            Page Content
+          </Link>
           
           {/* Future Proofing requested by user */}
           <div className="pt-6 pb-2">

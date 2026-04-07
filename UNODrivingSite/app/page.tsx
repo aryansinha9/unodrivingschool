@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,17 +6,16 @@ import VideoPlayer from "@/app/components/VideoPlayer";
 import HomepageFAQ from "@/app/components/HomepageFAQ";
 import CountUp from "@/app/components/CountUp";
 import VisionMission from "@/app/components/VisionMission";
-import VideoModal from "@/app/components/VideoModal";
 import LocationSearch from "@/app/components/LocationSearch";
+import HeroPlayButton from "@/app/components/HeroPlayButton";
+import { getPageContent, homepageDefaults } from "@/lib/supabase/pageContent";
 
-export default function Home() {
-  const [isHeroVideoOpen, setIsHeroVideoOpen] = useState(false);
+export default async function Home() {
+  const content = await getPageContent('homepage', homepageDefaults);
 
   return (
     <main className="min-h-screen">
       <HomepagePopup />
-      {/* Sticky Header removed - now in Layout */}
-
 
       {/* Hero Section */}
       <section className="relative py-12 lg:py-24 overflow-visible bg-background-main">
@@ -37,12 +33,11 @@ export default function Home() {
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8">
             <h1 className="font-anton text-5xl lg:text-7xl leading-tight uppercase text-text-main">
-              LEARN TO <span className="text-primary">DRIVE</span> <br />
-              <span className="text-primary">TODAY!</span>
+              {content.hero_heading_line1} <span className="text-primary">{content.hero_heading_highlight}</span> <br />
+              <span className="text-primary">{content.hero_heading_line2}</span>
             </h1>
             <p className="font-roboto-slab text-lg text-gray-600 max-w-xl leading-relaxed">
-              Learning to Drive in Brisbane or the Gold Coast? Need driving lessons? Tired of spending endless money on Uber? Want to fill your learner logbook hours quickly?
-              Let’s start your engines and gain your independence! Uno Driving School offers affordable, comprehensive driving lessons and is the go-to driving school near you.
+              {content.hero_subtext}
             </p>
 
             <div className="space-y-4">
@@ -62,20 +57,12 @@ export default function Home() {
 
           {/* Right side visual */}
           <div className="relative h-[550px] lg:h-[700px] w-full flex items-center justify-center -mt-8 lg:-mt-12">
-            {/* Play Button Overlay */}
-            <button
-              onClick={() => setIsHeroVideoOpen(true)}
-              className="absolute z-20 w-20 h-20 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all group animate-pulse hover:animate-none cursor-pointer"
-              aria-label="Play Video"
-            >
-              <svg className="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
+            {/* Play Button — client component owns the modal state */}
+            <HeroPlayButton videoId={content.hero_video_id} />
 
-            {/* Main Visual Image - Uses tailwind scaling and translation. Adjust scale-[X.XX] to change size. Adjust -translate-x-[Xpx] or translate-y-[Xpx] to move it */}
+            {/* Main Visual Image */}
             <Image
-              src="/learn-to-drive1.png"
+              src={content.hero_image_src}
               alt="Learn to Drive with UNO"
               fill
               className="object-contain scale-[1.3] lg:scale-[1.3] translate-x-2 lg:translate-x-6"
@@ -83,8 +70,8 @@ export default function Home() {
             />
             <div className="absolute bottom-4 lg:bottom-12 left-0 right-0 z-10 text-center pointer-events-none">
               <div className="bg-white px-8 py-4 rounded-2xl shadow-xl max-w-xs mx-auto transform -rotate-2 inline-block pointer-events-auto border-2 border-primary">
-                <h3 className="font-anton text-2xl mb-1 text-primary">#1 Driving School</h3>
-                <p className="font-roboto text-lg font-bold text-text-main">Brisbane & Gold Coast</p>
+                <h3 className="font-anton text-2xl mb-1 text-primary">{content.hero_badge_title}</h3>
+                <p className="font-roboto text-lg font-bold text-text-main">{content.hero_badge_subtitle}</p>
               </div>
             </div>
           </div>
@@ -95,22 +82,22 @@ export default function Home() {
       <section className="bg-background-main py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
           <div className="bg-background-alt p-8 rounded-2xl">
-            <h3 className="font-anton text-2xl mb-3 text-text-main">Driving School Near You</h3>
-            <p className="font-roboto text-gray-700">Driving school near you promoting safe and independent drivers. Holistic, friendly approach, and positive culture for a safe learning.</p>
+            <h3 className="font-anton text-2xl mb-3 text-text-main">{content.usp_1_title}</h3>
+            <p className="font-roboto text-gray-700">{content.usp_1_body}</p>
             <div className="mt-4">
               <Link href="/locations" className="text-primary font-anton uppercase hover:underline">Find Location &rarr;</Link>
             </div>
           </div>
           <div className="bg-background-alt p-8 rounded-2xl">
-            <h3 className="font-anton text-2xl mb-3 text-text-main">Queensland Learner Log Book</h3>
-            <p className="font-roboto text-gray-700">Supercharge your log book progress with Uno! 1-hour lessons = 3 log book hours for the first 10 lessons. Get 30 hours in just 10 lessons!</p>
+            <h3 className="font-anton text-2xl mb-3 text-text-main">{content.usp_2_title}</h3>
+            <p className="font-roboto text-gray-700">{content.usp_2_body}</p>
             <div className="mt-4">
               <Link href="/brisbane-learner-drivers" className="text-primary font-anton uppercase hover:underline">Learn More &rarr;</Link>
             </div>
           </div>
           <div className="bg-background-alt p-8 rounded-2xl">
-            <h3 className="font-anton text-2xl mb-3 text-text-main">Affordable Driving Lessons</h3>
-            <p className="font-roboto text-gray-700">UNO offers affordable driving lessons with amazing savings on packages in Brisbane. Gift vouchers and Afterpay payment plans available.</p>
+            <h3 className="font-anton text-2xl mb-3 text-text-main">{content.usp_3_title}</h3>
+            <p className="font-roboto text-gray-700">{content.usp_3_body}</p>
             <div className="mt-4">
               <Link href="/prices" className="text-primary font-anton uppercase hover:underline">View Prices &rarr;</Link>
             </div>
@@ -125,7 +112,7 @@ export default function Home() {
           <div className="order-2 lg:order-1 relative">
             <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/homepage_experience.jpg"
+                src={content.philosophy_image_src}
                 alt="Happy student passing driving test"
                 fill
                 className="object-cover object-[60%_50%] lg:object-center"
@@ -153,15 +140,18 @@ export default function Home() {
           </div>
           <div className="order-1 lg:order-2 space-y-6">
             <h2 className="font-anton text-4xl lg:text-5xl uppercase text-text-main">
-              Pass Your Drivers Test <span className="text-primary">With UNO!</span>
+              {content.philosophy_heading.includes('UNO!')
+                ? (
+                  <>
+                    {content.philosophy_heading.replace(' With UNO!', '')} <span className="text-primary">With UNO!</span>
+                  </>
+                )
+                : content.philosophy_heading
+              }
             </h2>
             <div className="space-y-6 font-roboto text-gray-600 leading-relaxed">
-              <p>
-                Looking for affordable driving school nearby with comprehensive and holistic teaching methods? Learn to drive confidently with UNO, the go-to driving school in Brisbane and the Gold Coast. Our expert instructors specialise in helping learners of all ages pass their driving test and drive safely.
-              </p>
-              <p>
-                Specialising in supporting nervous drivers. Whether you struggle with road anxiety or are a nervous driver, our low-stress, holistic teaching approach will help you gain confidence. Experience a positive learning environment at UNO as you embark on a comprehensive journey towards mastering safe driving. Say goodbye to parental admonitions and start your driving lessons today and accelerate towards your independence with just a twist of the gear stick!
-              </p>
+              <p>{content.philosophy_body_1}</p>
+              <p>{content.philosophy_body_2}</p>
             </div>
 
             <VisionMission />
@@ -175,7 +165,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Learning Path */}
+      {/* Learning Path — mirrors Prices page structure, hardcoded */}
       <section className="bg-background-main py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-12">Simple Steps to Get Your License</h2>
@@ -208,7 +198,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Packages Preview */}
+      {/* Packages Preview — mirrors Prices page, hardcoded per plan */}
       <section className="bg-background-alt py-16">
         <div className="container mx-auto px-6">
           <h2 className="font-anton text-4xl text-center mb-6">Choose Your Driving Lessons</h2>
@@ -265,7 +255,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Monte Carlo Test Package */}
+            {/* Zoom Test Package */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-1 transition-transform flex flex-col">
               <div className="bg-primary p-4 text-center">
                 <h3 className="font-anton text-white text-2xl uppercase">Zoom Test Package</h3>
@@ -277,7 +267,7 @@ export default function Home() {
                   <li>60-minute driving lesson</li>
                   <li>Insured automatic car</li>
                   <li>Pick-up and drop-off</li>
-                  <li>Rental of instructor’s car for test</li>
+                  <li>Rental of instructor&apos;s car for test</li>
                   <li>Free provisional plates</li>
                   <li>Smile</li>
                 </ul>
@@ -287,34 +277,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* Why Choose Us */}
       <section className="container mx-auto px-6 py-16 text-center max-w-4xl">
-        <h2 className="font-anton text-3xl mb-6">Best Driving Lessons Even For Beginner!</h2>
+        <h2 className="font-anton text-3xl mb-6">{content.why_section_heading}</h2>
         <p className="text-gray-600 text-lg leading-relaxed mb-10">
-          Accelerate your driving skills and boost your confidence through our comprehensive coaching at UNO Driving School. We offer diverse training programs for novice and advanced drivers in Brisbane, focusing on defensive driving. What sets us apart is our unwavering dedication to road safety and accident prevention.
+          {content.why_section_body}
         </p>
 
         <div className="relative pt-[56.25%] w-full rounded-2xl overflow-hidden shadow-xl bg-black">
           <VideoPlayer
-            videoId="AcHQLgvgftc"
-            thumbnailUrl="/images/live-student.png"
-            title="Best Driving Lessons Even For Beginner!"
+            videoId={content.why_section_video_id}
+            thumbnailUrl={content.why_section_thumbnail}
+            title={content.why_section_heading}
           />
         </div>
       </section>
 
       {/* FAQ Section */}
       <HomepageFAQ />
-
-      <VideoModal
-        videoId="Gmargl4hwNg"
-        isOpen={isHeroVideoOpen}
-        onClose={() => setIsHeroVideoOpen(false)}
-      />
     </main>
   );
 }

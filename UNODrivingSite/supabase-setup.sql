@@ -74,3 +74,38 @@ CREATE TRIGGER trg_posts_updated_at
 BEFORE UPDATE ON public.posts
 FOR EACH ROW
 EXECUTE FUNCTION update_updated_at_column();
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- 6. Page Content Table (for admin-editable page content)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+CREATE TABLE public.page_content (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  page_id     text UNIQUE NOT NULL,
+  content     jsonb DEFAULT '{}'::jsonb,
+  updated_at  timestamp with time zone DEFAULT now(),
+  updated_by  text
+);
+
+ALTER TABLE public.page_content ENABLE ROW LEVEL SECURITY;
+
+-- Anyone can read (pages are publicly rendered)
+CREATE POLICY "Public can read page content"
+  ON public.page_content FOR SELECT TO public USING (true);
+
+-- Only authenticated admins can write
+CREATE POLICY "Admins can edit page content"
+  ON public.page_content FOR ALL TO authenticated
+  USING (true) WITH CHECK (true);
+
+-- Seed the three editable pages (empty content = defaults are used)
+INSERT INTO public.page_content (page_id, content) VALUES
+  ('homepage', '{}'),
+  ('about-us', '{}'),
+  ('prices',   '{}')
+ON CONFLICT (page_id) DO NOTHING;
+
+-- Keep updated_at current
+CREATE TRIGGER trg_page_content_updated_at
+  BEFORE UPDATE ON public.page_content
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
