@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/app/components/PageHeader";
 
@@ -11,14 +12,26 @@ export default function AboutUs() {
 
             {/* Intro Section */}
             <section className="container mx-auto px-6 py-12 lg:py-16">
-                <div className="max-w-4xl mx-auto text-center space-y-6">
-                    <h2 className="font-anton text-3xl lg:text-4xl text-primary mb-4">Welcome to UNO Driving School</h2>
-                    <p className="font-roboto text-lg text-gray-700 leading-relaxed">
-                        Welcome to UNO Driving School’s official website, your pre-eminent destination for comprehensive and professional driver training services in Brisbane, Queensland. Step into a world of top-notch instruction and cutting-edge learning resources designed to elevate your driving skills and confidence on the road.
-                    </p>
-                    <p className="font-roboto text-lg text-gray-700 leading-relaxed">
-                        Our fantastic team of certified instructors is dedicated to providing excellent driving lessons with a holistic approach. We’re not just here to teach you the basics; we want to make you the best driver you can be. With heaps of experience and dedication, we aim to help you not only master essential skills but also embrace a holistic learning experience, ensuring you confidently navigate the roads. Get ready to rock the road with confidence!
-                    </p>
+                <div className="grid lg:grid-cols-2 gap-12 items-center mx-auto text-left">
+                    <div className="space-y-6">
+                        <h2 className="font-anton text-3xl lg:text-4xl text-primary mb-4">Welcome to UNO Driving School</h2>
+                        <p className="font-roboto text-lg text-gray-700 leading-relaxed">
+                            Welcome to UNO Driving School’s official website, your pre-eminent destination for comprehensive and professional driver training services in Brisbane, Queensland. Step into a world of top-notch instruction and cutting-edge learning resources designed to elevate your driving skills and confidence on the road.
+                        </p>
+                        <p className="font-roboto text-lg text-gray-700 leading-relaxed">
+                            Our fantastic team of certified instructors is dedicated to providing excellent driving lessons with a holistic approach. We’re not just here to teach you the basics; we want to make you the best driver you can be. With heaps of experience and dedication, we aim to help you not only master essential skills but also embrace a holistic learning experience, ensuring you confidently navigate the roads. Get ready to rock the road with confidence!
+                        </p>
+                    </div>
+                    <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                        <Image
+                            src="/About-Us.png"
+                            alt="UNO Driving School Team"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            priority
+                        />
+                    </div>
                 </div>
             </section>
 

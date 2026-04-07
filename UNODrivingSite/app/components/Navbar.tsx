@@ -58,6 +58,7 @@ export default function Navbar() {
                 <nav className="hidden md:flex gap-6 font-roboto font-medium text-text-main items-center">
                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                     <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
+                    <Link href="/instructor" className="hover:text-primary transition-colors">Instructors</Link>
                     <Link href="/prices" className="hover:text-primary transition-colors">Prices</Link>
                     <Link href="/locations" className="hover:text-primary transition-colors">Locations</Link>
                     <Link href="/photo-gallery" className="hover:text-primary transition-colors">Gallery</Link>
@@ -104,6 +105,7 @@ export default function Navbar() {
                 <nav className="flex flex-col items-center gap-6 font-anton text-2xl text-text-main uppercase tracking-wide pt-32 pb-10 overflow-y-auto">
                     <Link href="/" onClick={toggleMobileMenu} className="hover:text-primary">Home</Link>
                     <Link href="/about-us" onClick={toggleMobileMenu} className="hover:text-primary">About Us</Link>
+                    <Link href="/instructor" onClick={toggleMobileMenu} className="hover:text-primary">Instructors</Link>
                     <Link href="/prices" onClick={toggleMobileMenu} className="hover:text-primary">Prices</Link>
                     <Link href="/locations" onClick={toggleMobileMenu} className="hover:text-primary">Locations</Link>
                     <Link href="/photo-gallery" onClick={toggleMobileMenu} className="hover:text-primary">Gallery</Link>

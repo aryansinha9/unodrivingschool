@@ -63,6 +63,8 @@ export default function LocationSearch() {
         // If there's an exact match or first suggestion, use it
         if (suggestions.length > 0) {
             handleSelect(suggestions[0]);
+        } else if (query.trim().length > 0) {
+            router.push("/not-covered");
         }
     };
 
