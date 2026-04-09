@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anton, Roboto, Roboto_Slab } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import AnnouncementBanner from "./components/AnnouncementBanner";
 import "./globals.css";
 
 const anton = Anton({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${anton.variable} ${roboto.variable} ${robotoSlab.variable} antialiased flex flex-col min-h-screen`}
       >
+        <AnnouncementBanner />
         <Navbar />
         <div className="flex-grow">
           {children}
